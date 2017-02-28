@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Зайцев](https://up.htmlacademy.ru/adaptive/10/user/287101).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Бухвалова](https://htmlacademy.ru/profile/id114660).
 
 ---
 
