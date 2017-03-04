@@ -6,16 +6,17 @@
 </head>
 <body>
   <h1 class="visually-hidden">Пинк</h1>
+
   <header class="page-header">
     <nav class="main-nav main-nav--open">
       <div class="main-nav__panel">
         <a class="logo">
-            <img
-              src="http://placehold.it/90x40"
-              width="90"
-              height="40"
-              alt="Pink"
-            >
+          <img
+            src="http://placehold.it/90x40"
+            width="90"
+            height="40"
+            alt="Pink"
+          >
         </a>
         <button class="main-nav__toggle main-nav__toggle--close" type="button">Close</button>
       </div>
@@ -35,7 +36,9 @@
       </ul>
     </nav>
   </header>
+
   <main class="page-content">
+
     <section class="downloads">
       <h2 class="visually-hidden">Загрузки</h2>
       <img
@@ -53,6 +56,7 @@
       </div>
       <p class="downloads__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
+
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="advantages__header">
@@ -76,6 +80,7 @@
         </li>
       </ul>
     </section>
+
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews-slider">
@@ -116,54 +121,45 @@
         alt="Phone with a smile"
       >
     </section>
+
     <section class="tariffs">
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="tariffs__slider">
-        <ul class="tariff">
-          <li class="tariff__header">
-            <h3 class="tariff__name">База</h3>
-            <p class="tariff__price">1,99 USD</p>
-          </li>
-          <li class="tariff__feature tariff__feature--yes">
-            Розовый фильтра
-          </li>
-          <li class="tariff__feature tariff__feature--no">
-            Смайлики
-          </li>
-          <li class="tariff__feature tariff__feature--no">
-            Комментарии
-          </li>
-        </ul>
-        <ul class="tariff tariff--hit">
-          <li class="tariff__header">
-            <h3 class="tariff__name">Стандарт</h3>
-            <p class="tariff__price">3,99 USD</p>
-          </li>
-          <li class="tariff__feature tariff__feature--yes">
-            Розовый фильтра
-          </li>
-          <li class="tariff__feature tariff__feature--yes">
-            Смайлики
-          </li>
-          <li class="tariff__feature tariff__feature--no">
-            Комментарии
-          </li>
-        </ul>
-        <ul class="tariff">
-          <li class="tariff__header">
-            <h3 class="tariff__name">Анлим</h3>
-            <p class="tariff__price">9,99 USD</p>
-          </li>
-          <li class="tariff__feature tariff__feature--yes">
-            Розовый фильтра
-          </li>
-          <li class="tariff__feature tariff__feature--yes">
-            Смайлики
-          </li>
-          <li class="tariff__feature tariff__feature--yes">
-            Комментарии
-          </li>
-        </ul>
+        <table class="tariffs-table">
+          <thead>
+            <tr>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">База</span>
+                <span class="tariffs-table__price">1,99 USD</span>
+              </th>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">Стандарт</span>
+                <span class="tariffs-table__price">3,99 USD</span>
+              </th>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">Анлим</span>
+                <span class="tariffs-table__price">1,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tariffs-table__feature tariffs-table__feature--yes">Розовый фильтр</td>
+              <td class="tariffs-table__feature tariffs-table__feature--yes">Розовый фильтр</td>
+              <td class="tariffs-table__feature tariffs-table__feature--yes">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__feature tariffs-table__feature--no">Смайлики</td>
+              <td class="tariffs-table__feature tariffs-table__feature--yes">Смайлики</td>
+              <td class="tariffs-table__feature tariffs-table__feature--yes">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__feature tariffs-table__feature--no">Комментарии</td>
+              <td class="tariffs-table__feature tariffs-table__feature--no">Комментарии</td>
+              <td class="tariffs-table__feature tariffs-table__feature--yes">Комментарии</td>
+            </tr>
+          </tbody>
+        </table>
         <div class="tariffs__controls">
           <button type="button" class="tariffs__bullet">first</button>
           <button type="button" class="tariffs__bullet tariffs__bullet--active">second</button>
@@ -171,11 +167,14 @@
         </div>
       </div>
     </section>
+
     <section class="contacts">
+
       <h2 class="contacts__title">
         <span>Остались вопросы?</span>
         <span>Свяжитесь с нами!</span>
       </h2>
+
       <ul class="contacts__list">
         <li class="contacts__item">
           <h3 class="contacts__type">Звоните:</h3>
@@ -190,6 +189,7 @@
           <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
         </li>
       </ul>
+
       <div class="map">
         <img
           src="http://placehold.it/320x200"
@@ -198,7 +198,9 @@
           alt="Map"
         >
       </div>
+
     </section>
+
   </main>
 </body>
 </html>
