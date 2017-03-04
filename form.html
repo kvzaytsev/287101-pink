@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="main-nav main-nav--open">
+      <div class="main-nav__panel">
+        <a class="logo" href="#">
+          <img
+            src="http://placehold.it/90x40"
+            width="90"
+            height="40"
+            alt="Pink"
+          >
+        </a>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-content">
+    <h1 class="contest-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+    <p class="contest-condition">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+    </p>
+
+    <form class="trip-form" action="https://echo.htmlacademy.ru/" method="post">
+
+      <h2 class="visually-hidden">Полное имя</h2>
+      <ul class="trip-form__person">
+
+        <li class="trip-form__person-item">
+          <label for="person-surname" class="trip-form__person-label">Фамилия:</label>
+          <input
+            id="person-surname"
+            class="trip-form__person-input"
+            name="surname"
+            type="text"
+            placeholder="Укажите фамилию *">
+        </li>
+
+        <li class="trip-form__person-item">
+          <label for="person-firstname" class="trip-form__person-label">Имя:</label>
+          <input
+            id="person-firstname"
+            class="trip-form__person-input"
+            name="firstname"
+            type="text"
+            placeholder="Укажите ваше имя *">
+        </li>
+
+        <li class="trip-form__person-item">
+          <label for="person-patronymic" class="trip-form__person-label">Отчество:</label>
+          <input
+            id="person-patronymic"
+            class="trip-form__person-input"
+            name="patronymic"
+            type="text"
+            placeholder="Ну и отчество тоже">
+        </li>
+
+      </ul>
+
+      <h2 class="trip-form__legend">Ваши безбашенные достижения в путешествии</h2>
+      <ul class="trip-form__achievements-list">
+
+        <li class="trip-form__achievements-item">
+          <input
+            id="achievement-shark"
+            type="checkbox"
+            name="achievements[]"
+            value="shark">
+          <label for="achievement-shark" class="trip-form__achievement-label">Сделал селфи с акулой</label>
+        </li>
+
+        <li class="trip-form__achievements-item">
+          <input
+            id="achievement-beach"
+            type="checkbox"
+            name="achievements[]"
+            value="beach">
+          <label for="achievement-beach" class="trip-form__achievement-label">Обгорел на пляже</label>
+        </li>
+
+        <li class="trip-form__achievements-item">
+          <input
+            id="achievement-norris"
+            type="checkbox"
+            name="achievements[]"
+            value="norris">
+          <label for="achievement-norris" class="trip-form__achievement-label">Видел Чака Норриса</label>
+        </li>
+
+        <li class="trip-form__achievements-item">
+          <input
+            id="achievement-souvenirs"
+            type="checkbox"
+            name="achievements[]"
+            value="souvenirs">
+          <label for="achievement-souvenirs" class="trip-form__achievement-label">Накупил сувениров</label>
+        </li>
+
+        <li class="trip-form__achievements-item">
+          <input
+            id="achievement-tower"
+            type="checkbox"
+            name="achievements[]"
+            value="tower">
+          <label for="achievement-tower" class="trip-form__achievement-label">Удержал башню</label>
+        </li>
+
+        <li class="trip-form__achievements-item">
+          <input
+            id="achievement-hotel"
+            type="checkbox"
+            name="achievements[]"
+            value="hotel">
+          <label for="achievement-hotel" class="trip-form__achievement-label">Разгромил отель</label>
+        </li>
+
+      </ul>
+
+      <h2 class="visually-hidden">Контактные данные</h2>
+      <ul class="trip-form__contacts">
+
+        <li class="trip-form__contacts-item">
+          <label for="contacts-tel" class="trip-form__contacts-label">Номер телефона</label>
+          <input
+            id="contacts-tel"
+            class="trip-form__contacts-input"
+            name="tel"
+            type="tel"
+            placeholder="Номер, пожалуйста">
+        </li>
+
+        <li class="trip-form__contacts-item">
+          <label for="contacts-email" class="trip-form__person-label">Адрес почты</label>
+          <input
+            id="contacts-email"
+            class="trip-form__contacts-input"
+            name="email"
+            type="email"
+            placeholder="Введите почту *">
+        </li>
+
+      </ul>
+
+      <h2 class="trip-form__legend">Ваши безбашенные достижения в путешествии</h2>
+      <ul class="trip-form__platforms-list">
+
+        <li class="trip-form__platforms-item">
+          <input
+            id="platform-ios"
+            type="radio"
+            name="platform"
+            value="ios">
+          <label for="platform-ios" class="trip-form__platform-label">Pink для iOS</label>
+        </li>
+
+        <li class="trip-form__platforms-item">
+          <input
+            id="platform-android"
+            type="radio"
+            name="platform"
+            value="android">
+          <label for="platform-android" class="trip-form__platform-label">Pink для Android</label>
+        </li>
+
+        <li class="trip-form__platforms-item">
+          <input
+            id="platform-window"
+            type="radio"
+            name="platform"
+            value="window">
+          <label for="platform-window" class="trip-form__platform-label">Windows Phone</label>
+        </li>
+
+      </ul>
+
+      <button type="submit" class="trip-form__submit btn btn--square">Отправить форму</button>
+    </form>
+
+    <p class="form-clarification">
+      * &ndash; обязательные поля
+    </p>
+
+  </main>
+
+  <footer class="page-footer">
+
+    <div class="page-footer__logo-wrap">
+      <a class="page-footer__logo" href="#">
+        <img
+          src="http://placehold.it/150x40"
+          width="150"
+          height="40"
+          alt="Pink"
+        >
+      </a>
+    </div>
+
+    <div class="footer__socials">
+      <a class="footer__social footer__social--tweeter" href="#">Twitter</a>
+      <a class="footer__social footer__social--facebook" href="#">Facebook</a>
+      <a class="footer__social footer__social--youtube" href="#">Youtube</a>
+    </div>
+
+    <div class="footer__copyright">
+      <span class="footer__copyright-text">Разработано</span>
+      <a class="footer__copyright-logo" href="#">
+        <img
+          src="http://placehold.it/30x35"
+          width="30"
+          height="35"
+          alt="HTML Academy"
+        >
+      </a>
+    </div>
+
+  </footer>
+</body>
+</html>
