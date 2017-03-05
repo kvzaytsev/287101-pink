@@ -23,7 +23,7 @@
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="photo">Фотографии</a>
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link">Конкурс</a>
@@ -37,7 +37,7 @@
 
   <main class="form-page-content">
 
-    <h1 class="photo-page-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <h1 class="form-page-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
     <form class="trip-form" action="https://echo.htmlacademy.ru/" method="post">
 
@@ -48,96 +48,104 @@
       <fieldset class="trip-form__person">
         <legend class="visually-hidden">Полное имя</legend>
 
-          <div class="trip-form__person-item">
-            <label for="person-surname" class="trip-form__person-label">Фамилия:</label>
-            <input
-              id="person-surname"
-              class="trip-form__person-input"
-              name="surname"
-              type="text"
-              required
-              placeholder="Укажите фамилию *">
-          </div>
+          <ul class="trip-form__person-list">
 
-          <div class="trip-form__person-item">
-            <label for="person-firstname" class="trip-form__person-label">Имя:</label>
-            <input
-              id="person-firstname"
-              class="trip-form__person-input"
-              name="firstname"
-              type="text"
-              required
-              placeholder="Укажите ваше имя *">
-          </div>
+            <li class="trip-form__person-item">
+              <label for="person-surname" class="trip-form__person-label">Фамилия:</label>
+              <input
+                id="person-surname"
+                class="trip-form__person-input"
+                name="surname"
+                type="text"
+                required
+                placeholder="Укажите фамилию *">
+            </li>
 
-          <div class="trip-form__person-item">
-            <label for="person-patronymic" class="trip-form__person-label">Отчество:</label>
-            <input
-              id="person-patronymic"
-              class="trip-form__person-input"
-              name="patronymic"
-              type="text"
-              placeholder="Ну и отчество тоже">
-          </div>
+            <li class="trip-form__person-item">
+              <label for="person-firstname" class="trip-form__person-label">Имя:</label>
+              <input
+                id="person-firstname"
+                class="trip-form__person-input"
+                name="firstname"
+                type="text"
+                required
+                placeholder="Укажите ваше имя *">
+            </li>
+
+            <li class="trip-form__person-item">
+              <label for="person-patronymic" class="trip-form__person-label">Отчество:</label>
+              <input
+                id="person-patronymic"
+                class="trip-form__person-input"
+                name="patronymic"
+                type="text"
+                placeholder="Ну и отчество тоже">
+            </li>
+
+          </ul>
 
       </fieldset>
 
       <fieldset class="trip-form__achievements">
         <legend class="trip-form__legend">Ваши безбашенные достижения в путешествии</legend>
 
-        <div class="trip-form__achievements-item">
-          <input
-            id="achievement-shark"
-            type="checkbox"
-            name="achievements[]"
-            value="shark">
-          <label for="achievement-shark" class="trip-form__achievement-label">Сделал селфи с акулой</label>
-        </div>
+        <ul class="trip-form__achievements-list">
 
-        <div class="trip-form__achievements-item">
-          <input
-            id="achievement-beach"
-            type="checkbox"
-            name="achievements[]"
-            value="beach">
-          <label for="achievement-beach" class="trip-form__achievement-label">Обгорел на пляже</label>
-        </div>
+          <li class="trip-form__achievements-item">
+            <input
+              id="achievement-shark"
+              type="checkbox"
+              name="achievements[]"
+              value="shark">
+            <label for="achievement-shark" class="trip-form__achievement-label">Сделал селфи с акулой</label>
+          </li>
 
-        <div class="trip-form__achievements-item">
-          <input
-            id="achievement-norris"
-            type="checkbox"
-            name="achievements[]"
-            value="norris">
-          <label for="achievement-norris" class="trip-form__achievement-label">Видел Чака Норриса</label>
-        </div>
+          <li class="trip-form__achievements-item">
+            <input
+              id="achievement-beach"
+              type="checkbox"
+              name="achievements[]"
+              value="beach">
+            <label for="achievement-beach" class="trip-form__achievement-label">Обгорел на пляже</label>
+          </li>
 
-        <div class="trip-form__achievements-item">
-          <input
-            id="achievement-souvenirs"
-            type="checkbox"
-            name="achievements[]"
-            value="souvenirs">
-          <label for="achievement-souvenirs" class="trip-form__achievement-label">Накупил сувениров</label>
-        </div>
+          <li class="trip-form__achievements-item">
+            <input
+              id="achievement-norris"
+              type="checkbox"
+              name="achievements[]"
+              value="norris">
+            <label for="achievement-norris" class="trip-form__achievement-label">Видел Чака Норриса</label>
+          </li>
 
-        <div class="trip-form__achievements-item">
-          <input
-            id="achievement-tower"
-            type="checkbox"
-            name="achievements[]"
-            value="tower">
-          <label for="achievement-tower" class="trip-form__achievement-label">Удержал башню</label>
-        </div>
+          <li class="trip-form__achievements-item">
+            <input
+              id="achievement-souvenirs"
+              type="checkbox"
+              name="achievements[]"
+              value="souvenirs">
+            <label for="achievement-souvenirs" class="trip-form__achievement-label">Накупил сувениров</label>
+          </li>
 
-        <div class="trip-form__achievements-item">
-          <input
-            id="achievement-hotel"
-            type="checkbox"
-            name="achievements[]"
-            value="hotel">
-          <label for="achievement-hotel" class="trip-form__achievement-label">Разгромил отель</label>
-        </div>
+          <li class="trip-form__achievements-item">
+            <input
+              id="achievement-tower"
+              type="checkbox"
+              name="achievements[]"
+              value="tower">
+            <label for="achievement-tower" class="trip-form__achievement-label">Удержал башню</label>
+          </li>
+
+          <li class="trip-form__achievements-item">
+            <input
+              id="achievement-hotel"
+              type="checkbox"
+              name="achievements[]"
+              value="hotel">
+            <label for="achievement-hotel" class="trip-form__achievement-label">Разгромил отель</label>
+          </li>
+
+        </ul>
 
       </fieldset>
 
@@ -145,26 +153,30 @@
       <fieldset class="trip-form__contacts">
         <legend class="visually-hidden">Контактные данные</legend>
 
-        <div class="trip-form__contacts-item">
-          <label for="contacts-tel" class="trip-form__contacts-label">Номер телефона</label>
-          <input
-            id="contacts-tel"
-            class="trip-form__contacts-input"
-            name="tel"
-            type="tel"
-            placeholder="Номер, пожалуйста">
-        </div>
+        <ul class="trip-form__contacts-list">
 
-        <div class="trip-form__contacts-item">
-          <label for="contacts-email" class="trip-form__person-label">Адрес почты</label>
-          <input
-            id="contacts-email"
-            class="trip-form__contacts-input"
-            name="email"
-            type="email"
-            required
-            placeholder="Введите почту *">
-        </div>
+          <li class="trip-form__contacts-item">
+            <label for="contacts-tel" class="trip-form__contacts-label">Номер телефона</label>
+            <input
+              id="contacts-tel"
+              class="trip-form__contacts-input"
+              name="tel"
+              type="tel"
+              placeholder="Номер, пожалуйста">
+          </li>
+
+          <li class="trip-form__contacts-item">
+            <label for="contacts-email" class="trip-form__person-label">Адрес почты</label>
+            <input
+              id="contacts-email"
+              class="trip-form__contacts-input"
+              name="email"
+              type="email"
+              required
+              placeholder="Введите почту *">
+          </li>
+
+        </ul>
 
       </fieldset>
 
@@ -172,32 +184,36 @@
       <fieldset class="trip-form__platforms-list">
         <legend class="trip-form__legend">С каким приложением путешествовали?</legend>
 
-        <div class="trip-form__platforms-item">
-          <input
-            id="platform-ios"
-            type="radio"
-            name="platform"
-            value="ios">
-          <label for="platform-ios" class="trip-form__platform-label">Pink для iOS</label>
-        </div>
+        <ul class="trip-form__platforms-list">
 
-        <div class="trip-form__platforms-item">
-          <input
-            id="platform-android"
-            type="radio"
-            name="platform"
-            value="android">
-          <label for="platform-android" class="trip-form__platform-label">Pink для Android</label>
-        </div>
+          <li class="trip-form__platforms-item">
+            <input
+              id="platform-ios"
+              type="radio"
+              name="platform"
+              value="ios">
+            <label for="platform-ios" class="trip-form__platform-label">Pink для iOS</label>
+          </li>
 
-        <div class="trip-form__platforms-item">
-          <input
-            id="platform-window"
-            type="radio"
-            name="platform"
-            value="window">
-          <label for="platform-window" class="trip-form__platform-label">Windows Phone</label>
-        </div>
+          <li class="trip-form__platforms-item">
+            <input
+              id="platform-android"
+              type="radio"
+              name="platform"
+              value="android">
+            <label for="platform-android" class="trip-form__platform-label">Pink для Android</label>
+          </li>
+
+          <li class="trip-form__platforms-item">
+            <input
+              id="platform-window"
+              type="radio"
+              name="platform"
+              value="window">
+            <label for="platform-window" class="trip-form__platform-label">Windows Phone</label>
+          </li>
+
+        </ul>
 
       </fieldset>
 
