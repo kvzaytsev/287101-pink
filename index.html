@@ -1,12 +1,233 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <h1 class="visually-hidden">Пинк - главная страница</h1>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <header class="page-header">
+    <nav class="main-nav main-nav--open">
+      <div class="main-nav__panel">
+        <a class="logo">
+          <img
+            src="http://placehold.it/90x40"
+            width="90"
+            height="40"
+            alt="Pink"
+          >
+        </a>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  </body>
+  <main class="index-page-content">
+
+    <section class="downloads">
+      <h2 class="visually-hidden">Загрузки</h2>
+      <img
+        class="downloads__preview"
+        src="http://placehold.it/320x400"
+        width="320"
+        height="400"
+        alt="Phone with a picture"
+      >
+      <a class="downloads__button btn btn--round" href="#">Скачать приложение</a>
+      <div class="downloads__platforms">
+        <a class="downloads__platform downloads__platform--apple" href="#">Apple</a>
+        <a class="downloads__platform downloads__platform--android" href="#">Android</a>
+        <a class="downloads__platform downloads__platform--win" href="#">Window</a>
+      </div>
+      <p class="downloads__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages__slogan">
+        <p class="advantages__attraction">Устали от серости мегаполиса?</p>
+        <p class="advantages__attraction">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantage">
+          <h3 class="advantage__header">Поднимает настроение</h3>
+          <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+            кликов!</p>
+        </li>
+        <li class="advantage">
+          <h3 class="advantage__header">Меняет мир вокруг</h3>
+          <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="advantage">
+          <h3 class="advantage__header">Заводит новых друзей</h3>
+          <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="reviews-slider">
+        <div class="reviews-slider__inner">
+          <div class="review-slide">
+            <p class="review-slide__author">Николай Петров</p>
+            <p class="review-slide__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложеннойфотографии!»
+            </p>
+          </div>
+          <div class="review-slide">
+            <p class="review-slide__author">Николай Петров</p>
+            <p class="review-slide__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложеннойфотографии!»
+            </p>
+          </div>
+          <div class="review-slide">
+            <p class="review-slide__author">Николай Петров</p>
+            <p class="review-slide__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложеннойфотографии!»
+            </p>
+          </div>
+        </div>
+        <div class="reviews-slider__controls">
+          <button type="button" class="reviews-slider__bullet reviews-slider__bullet--active">1</button>
+          <button type="button" class="reviews-slider__bullet">2</button>
+          <button type="button" class="reviews-slider__bullet">3</button>
+        </div>
+      </div>
+      <img
+        class="reviews__bottom-img"
+        src="http://placehold.it/160x280"
+        width="160"
+        height="280"
+        alt="Phone with a smile"
+      >
+    </section>
+
+    <section class="tariffs">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <div class="tariffs__slider">
+        <table class="tariffs-table">
+          <thead>
+            <tr>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">База</span>
+                <span class="tariffs-table__price">1,99 USD</span>
+              </th>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">Стандарт</span>
+                <span class="tariffs-table__price">3,99 USD</span>
+              </th>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">Анлим</span>
+                <span class="tariffs-table__price">1,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Розовый фильтр</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
+              </td>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Розовый фильтр</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
+              </td>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Розовый фильтр</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Смайлики</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--no">Нет</span>
+              </td>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Смайлики</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
+              </td>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Смайлики</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Комментарии</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--no">Нет</span>
+              </td>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Комментарии</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--no">Нет</span>
+              </td>
+              <td class="tariffs-table__feature">
+                <span class="tariffs-table__feature-name">Комментарии</span>
+                <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tariffs__controls">
+          <button type="button" class="tariffs__bullet">1</button>
+          <button type="button" class="tariffs__bullet tariffs__bullet--active">2</button>
+          <button type="button" class="tariffs__bullet">3</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+
+      <h2 class="contacts__title">
+        <span>Остались вопросы?</span>
+        <span>Свяжитесь с нами!</span>
+      </h2>
+
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h3 class="contacts__type">Звоните:</h3>
+          <a href="tel:+78125556666" class="contacts__tel">+7 (812) 555-66-66</a>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__type">Пишите:</h3>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__email">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__type">Приезжайте в гости:</h3>
+          <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+        </li>
+      </ul>
+
+      <div class="map">
+        <img
+          src="http://placehold.it/320x200"
+          width="320"
+          height="200"
+          alt="Map"
+        >
+      </div>
+
+    </section>
+
+  </main>
+</body>
 </html>
