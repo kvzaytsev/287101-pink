@@ -1,0 +1,40 @@
+.main-nav {
+
+}
+
+.main-nav__panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__logo {
+  display: block;
+}
+
+.main-nav__toggle {
+  display: block;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nam__item {
+  list-style: none;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px 0 20px 0 ;
+  border-top: 1px solid $menu-item-border-top;
+  border-bottom: 1px solid $menu-item-border-bottom;
+  background-color: $deepBlue;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.77;
+}
+
