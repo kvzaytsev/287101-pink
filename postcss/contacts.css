@@ -1,0 +1,40 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $contacts-title;
+}
+
+.contacts__title-part {
+  display: block;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__type {
+  font-size: 18px;
+  line-height: 1.2;
+  color: $contacts-title;
+  font-weight: bold;
+}
+
+.contacts__item {
+  list-style: none;
+}
+
+.contacts__email,
+.contacts__address,
+.contacts__tel {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: $contacts-red;
+}

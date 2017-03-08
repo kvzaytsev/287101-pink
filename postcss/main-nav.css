@@ -5,6 +5,10 @@
 .main-nav__panel {
   display: flex;
   justify-content: space-between;
+  background-color: $deepBlue;
+  border-bottom: 1px solid $menu-item-border-bottom;
+  padding: 21px;
+
 }
 
 .main-nav__logo {
@@ -26,15 +30,38 @@
 
 .main-nav__link {
   display: block;
-  padding: 20px 0 20px 0 ;
+  padding: 16px 0 16px 0 ;
   border-top: 1px solid $menu-item-border-top;
   border-bottom: 1px solid $menu-item-border-bottom;
   background-color: $deepBlue;
   color: $white;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.77;
 }
 
+.main-nav__panel {
+
+}
+
+.main-nav__toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-indent: -9999px;
+  font-size: 0;
+
+
+  &--close::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-menu-cross.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
