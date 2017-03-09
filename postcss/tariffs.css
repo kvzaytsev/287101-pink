@@ -1,14 +1,23 @@
 .tariffs {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  outline: 1px solid red;
+  background-color: $tariffs-background;
+}
 
+.tariffs__table {
+  margin-bottom: 30px;
 }
 
 .tariffs-table__header {
   background-color: $tariffs-table-head;
+  padding: 20px 0;
   width: 280px;
 }
 
 .tariffs-table__name {
   display: block;
+
   color: $white;
   font-size: 18px;
   line-height: 1.66;

@@ -1,10 +1,12 @@
 .advantages {
   background-color: $advantages-background;
   background-image: url("../img/iphone-screen-mobile@1x.png");
-  padding-bottom: 280px;
+  padding-bottom: 285px;
 }
 
 .advantages__slogan {
+  padding-top: 40px;
+  margin-bottom: 85px;
   border: 1px solid $white;
   background-color: $white;
   text-align: center;
@@ -13,19 +15,29 @@
   line-height: 1.2;
 }
 
+.advantages__attraction {
+  margin: 0 0 30px 0;
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
+.advantage {
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+
 .advantage__header {
   font-size: 18px;
   line-height: 1.33;
   font-weight: bold;
+  margin: 0;
 }
 
 .advantage__text {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.71;
 }

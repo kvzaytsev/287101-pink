@@ -6,8 +6,9 @@
 
 .downloads__img-wrap {
   min-height: 400px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: cover;
 }
 
 .downloads__desc {
@@ -43,7 +44,7 @@
 
   &::before {
     content: "";
-    display: block;
+    display: inline-block;
   }
 
   &--apple::before {

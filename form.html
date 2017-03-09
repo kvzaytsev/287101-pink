@@ -88,7 +88,7 @@
       </fieldset>
 
       <fieldset class="trip-form__achievements">
-        <legend class="trip-form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <legend class="trip-form__legend">Ваши безбашенные<br> достижения в путешествии</legend>
 
         <ul class="trip-form__achievements-list">
 
@@ -152,6 +152,7 @@
 
 
       <fieldset class="trip-form__contacts">
+
         <legend class="visually-hidden">Контактные данные</legend>
 
         <ul class="trip-form__contacts-list">
@@ -167,7 +168,7 @@
           </li>
 
           <li class="trip-form__contacts-item">
-            <label for="contacts-email" class="trip-form__person-label">Адрес почты</label>
+            <label for="contacts-email" class="trip-form__person-label">Адресок почты</label>
             <input
               id="contacts-email"
               class="trip-form__contacts-input"
@@ -219,7 +220,7 @@
       </fieldset>
 
       <fieldset class="trip-form__emotions">
-        <legend class="trip-form__legend">Опишите свои эмоции</legend>
+        <legend class="trip-form__legend trip-form__legend--emotions">Опишите свои эмоции</legend>
         <textarea class="trip-form__emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
 
@@ -238,9 +239,9 @@
     <div class="page-footer__logo-wrap">
       <a class="page-footer__logo" href="index.html">
         <img
-          src="http://placehold.it/150x40"
-          width="150"
-          height="40"
+          src="img/logo-pink-blue-mobile.svg"
+          width="148"
+          height="42"
           alt="Pink"
         >
       </a>
@@ -256,7 +257,7 @@
       <span class="page-footer__copyright-text">Разработано</span>
       <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/">
         <img
-          src="http://placehold.it/30x35"
+          src="img/logo-htmlacademy.svg"
           width="30"
           height="35"
           alt="HTML Academy"
@@ -269,7 +270,9 @@
   <div class="failure-popup">
     <p class="failure-popup__summary">Что-то пошло не так!</p>
     <p class="failure-popup__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button type="button" class="failure-popup__btn btn btn--square">OK</button>
+    <div class="failure-popup__bottom">
+      <button type="button" class="failure-popup__btn btn btn--square">OK</button>
+    </div>
   </div>
 
   <div class="success-popup">

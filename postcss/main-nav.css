@@ -8,7 +8,6 @@
   background-color: $deepBlue;
   border-bottom: 1px solid $menu-item-border-bottom;
   padding: 21px;
-
 }
 
 .main-nav__logo {
@@ -30,7 +29,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 16px 0 16px 0 ;
+  padding: 16px 0 15px 0 ;
   border-top: 1px solid $menu-item-border-top;
   border-bottom: 1px solid $menu-item-border-bottom;
   background-color: $deepBlue;
