@@ -1,7 +1,5 @@
 .tariffs {
   padding-top: 60px;
-  padding-bottom: 40px;
-  outline: 1px solid red;
   background-color: $tariffs-background;
 }
 

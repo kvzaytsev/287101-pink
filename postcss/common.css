@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  width: 320px;
 }
 
 .visually-hidden {
@@ -23,4 +24,16 @@ body {
     border: 3px solid $white  ;
     border-radius: 25px;
   }
+}
+
+BODY.outlines-on > * {
+  outline: 2px solid deeppink;
+}
+BODY.outlines-on > * > * {
+  outline: 2px dashed lime;
+  outline-offset: -2px;
+}
+BODY.outlines-on > * > * > * {
+  outline: 2px dotted dodgerblue;
+  outline-offset: -4px;
 }

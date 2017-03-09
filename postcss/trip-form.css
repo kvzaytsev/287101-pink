@@ -8,14 +8,12 @@
   font-size: 14px;
   line-height: 2.1;
   text-align: center;
-  outline: 1px solid red;
 }
 
 .trip-form__person {
   border: none;
   padding: 0 0 20px 0;
   margin: 0;
-  outline: 1px solid red;
 }
 
 .trip-form__person-list {
@@ -47,7 +45,6 @@
 
 .trip-form__achievements {
   border: none;
-  outline: 1px solid red;
   margin: 0;
   padding: 40px 0 0 0;
   background-color: $achievements-bkg;
@@ -87,7 +84,6 @@
 
 .trip-form__contacts {
   border: none;
-  outline: 1px solid red;
   margin: 0;
   padding: 25px 0;
 }
@@ -121,7 +117,6 @@
 
 .trip-form__platforms {
   border: none;
-  outline: 1px solid red;
   margin: 0;
   padding: 40px 0 0 0;
   background-color: $platforms-bkg;
@@ -144,7 +139,6 @@
 
 .trip-form__emotions {
   border: none;
-  outline: 1px solid red;
   margin: 0;
   padding: 40px 0 0 0;
 }
