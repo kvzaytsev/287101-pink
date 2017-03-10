@@ -37,7 +37,6 @@
 
 .downloads__platform {
   font-size: 0;
-  text-indent: -9999px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 15px;
@@ -61,8 +60,8 @@
   }
 
   &--win::before {
-   width: 44px;
-   height: 42px;
-   background-image: url("../img/logo-microsoft.svg");
- }
+    width: 44px;
+    height: 42px;
+    background-image: url("../img/logo-microsoft.svg");
+  }
 }

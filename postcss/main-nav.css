@@ -28,7 +28,6 @@
 }
 
 .main-nav__link {
-  background-color: $deepBlue;
   color: $white;
   text-decoration: none;
   text-transform: uppercase;

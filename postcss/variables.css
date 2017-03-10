@@ -1,28 +1,23 @@
 $tablet-width: 660px;
 $desktop-width: 960px;
 
-
 $deepBlue: #283645;
-$white: #fff;
+$white: #ffffff;
+$grey: #f2f2f2;
+$contacts-red: #d22856;
 
 $menu-item-border-top: #485461;
 $menu-item-border-bottom: #000001;
 
-$downloads-color: #1d2631;
-$downloads-text-color: #fff;
+$downloads-text-color: $white;
 
-$adnvantages-slogan: #1d2631;
-$advantages-background: #f2f2f2;
+$advantages-background: $grey;
 
-$tariffs-table-head: #283645;
-$tariffs-controls-bkg: #f2f2f2;
+$tariffs-table-head: $deepBlue;
+$tariffs-controls-bkg: $grey;
+$tariffs-background: $grey;
 
-$contacts-title: #283645;
-$contacts-red: #d22856;
-
-$tariffs-background: #f2f2f2;
-
-$achievements-bkg: #f2f2f2;
-$platforms-bkg: #f2f2f2;
+$achievements-bkg: $grey;
+$platforms-bkg: $grey;
 
 $red: #D12358;
