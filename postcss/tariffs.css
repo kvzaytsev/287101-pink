@@ -1,6 +1,7 @@
 .tariffs {
   padding-top: 60px;
   background-color: $tariffs-background;
+  min-height: 448px;
 }
 
 .tariffs__table {

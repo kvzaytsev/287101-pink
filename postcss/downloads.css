@@ -1,7 +1,7 @@
 .downloads {
   background: $downloads-color;
-  padding-bottom: 30px;
   text-align: center;
+  min-height: 667px;
 }
 
 .downloads__img-wrap {

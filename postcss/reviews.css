@@ -1,6 +1,7 @@
 .reviews {
   padding-top: 30px;
   padding-bottom: 60px;
+  min-height: 378px;
 }
 
 .reviews-slider__inner {

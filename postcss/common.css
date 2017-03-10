@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  width: 320px;
+  min-width: 320px;
 }
 
 .visually-hidden {
@@ -10,20 +10,6 @@ body {
   line-height: 0;
   margin: 0;
   padding: 0;
-}
-
-.btn {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 1;
-  padding: 15px;
-  text-decoration: none;
-
-
-  &--round {
-    border: 3px solid $white  ;
-    border-radius: 25px;
-  }
 }
 
 BODY.outlines-on > * {

@@ -1,6 +1,7 @@
 .contacts {
   text-align: center;
   padding-top: 50px;
+  min-height: 414px;
 }
 
 .contacts__title {
