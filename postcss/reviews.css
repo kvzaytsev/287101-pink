@@ -1,0 +1,30 @@
+.reviews {
+  min-height: 345px;
+}
+
+.reviews__inner {
+  @mixin container;
+  min-height: 345px;
+}
+
+.review-slide {
+  position: absolute;
+  text-align: center;
+  margin: 0 20px 0 20px;
+}
+
+.review-slide__author {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.66;
+  margin-bottom: 0px;
+}
+
+.review-slide__text {
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+.reviews-slider__controls {
+  text-align: center;
+}

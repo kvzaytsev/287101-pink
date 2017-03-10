@@ -1,0 +1,40 @@
+.advantages {
+  background-color: $advantages-background;
+  min-height: 1005px;
+}
+
+.advantages__inner {
+  @mixin container;
+}
+
+.advantages__slogan {
+  min-height: 250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 755px;
+}
+
+.advantage {
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+
+.advantage__header {
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+  margin: 0;
+}
+
+.advantage__text {
+  font-size: 14px;
+  line-height: 1.71;
+}

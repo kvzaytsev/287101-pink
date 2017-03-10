@@ -1,0 +1,168 @@
+.trip-form {
+  padding: 45px 20px 0 20px;
+}
+
+.trip-form__condition {
+  margin: 0 0 40px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 2.1;
+  text-align: center;
+}
+
+.trip-form__person {
+  border: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+.trip-form__person-list {
+  margin: 0;
+  padding: 0;
+}
+
+.trip-form__person-item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.trip-form__person-label {
+  margin-left: 22px;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $red;
+}
+
+.trip-form__person-input {
+  margin-top: 10px;
+  padding: 20px 20px 17px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.trip-form__achievements {
+  border: none;
+  margin: 0;
+  padding: 40px 0 0 0;
+  background-color: $achievements-bkg;
+}
+
+.trip-form__legend {
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+  margin-bottom: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.33;
+  color: $red;
+
+  &--emotions {
+    margin-bottom: 20px;
+  }
+}
+
+.trip-form__achievements-list {
+  margin: 0;
+  padding: 0;
+}
+
+.trip-form__achievements-item {
+  list-style: none;
+  margin-bottom: 60px;
+}
+
+.trip-form__achievement-label {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.trip-form__contacts {
+  border: none;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.trip-form__contacts-list {
+  margin: 0;
+  padding: 0;
+}
+
+.trip-form__contacts-item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.trip-form__contacts-label {
+  margin-left: 22px;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $red;
+}
+
+.trip-form__contacts-input {
+  margin-top: 10px;
+  padding: 20px 20px 17px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.trip-form__platforms {
+  border: none;
+  margin: 0;
+  padding: 40px 0 0 0;
+  background-color: $platforms-bkg;
+}
+
+.trip-form__platforms-list {
+  margin: 0;
+  padding: 0;
+}
+
+.trip-form__platforms-item {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.trip-form__platforms-label {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.trip-form__emotions {
+  border: none;
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+
+.trip-form__emotions-text {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 200px;
+  resize: none;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.trip-form__submit {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  width: 100%;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.trip-form__clarification {
+  text-align: center;
+}

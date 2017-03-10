@@ -1,0 +1,21 @@
+@import "mixins.css";
+
+@import "fonts.css";
+@import "variables.css";
+@import "common.css";
+@import "btn.css";
+
+@import "main-nav.css";
+@import "downloads.css";
+@import "advantages.css";
+@import "reviews.css";
+@import "tariffs.css";
+@import "contacts.css";
+@import "form-page-content.css";
+@import "trip-form.css";
+@import "page-footer.css";
+@import "page-header.css";
+@import "popup.css";
+@import "photo-page-content.css";
+@import "post-wall.css";
+@import "post.css";

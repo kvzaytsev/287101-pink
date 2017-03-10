@@ -1,0 +1,23 @@
+$tablet-width: 660px;
+$desktop-width: 960px;
+
+$deepBlue: #283645;
+$white: #ffffff;
+$grey: #f2f2f2;
+$contacts-red: #d22856;
+
+$menu-item-border-top: #485461;
+$menu-item-border-bottom: #000001;
+
+$downloads-text-color: $white;
+
+$advantages-background: $grey;
+
+$tariffs-table-head: $deepBlue;
+$tariffs-controls-bkg: $grey;
+$tariffs-background: $grey;
+
+$achievements-bkg: $grey;
+$platforms-bkg: $grey;
+
+$red: #D12358;

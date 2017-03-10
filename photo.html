@@ -3,18 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <style>
+    HTML {
+      background: url( 'preview/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
+    }
+
+    @media (min-width: 660px) {
+      HTML {
+        background-image: url( 'preview/pink-photo-tablet.jpg' );
+      }
+    }
+
+    @media (min-width: 960px) {
+      HTML {
+        background-image: url( 'preview/pink-photo-desktop.jpg' );
+      }
+    }
+
+    BODY {
+      opacity: .5;
+    }
+
+  </style>
+  <script src="../node_modules/pixel-glass/script.js"></script>
+
 </head>
-<body>
+<body class="outlines-on">
 
   <header class="page-header">
     <nav class="main-nav main-nav--open">
       <div class="main-nav__panel">
         <a class="logo" href="index.html">
           <img
-            src="http://placehold.it/90x40"
-            width="90"
-            height="40"
+            width="75"
+            height="22"
             alt="Pink"
+            src="img/logo-pink-white-mobile.svg"
           >
         </a>
         <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
@@ -34,11 +61,14 @@
         </li>
       </ul>
     </nav>
+
+    <h1 class="page-header__title page-header__title--photo">
+      Фотографии пользователей
+    </h1>
+
   </header>
 
   <main class="photo-page-content">
-
-    <h1 class="photo-page-content__title">Фотографии пользователей</h1>
 
     <section class="post-wall">
 
@@ -316,9 +346,9 @@
     <div class="page-footer__logo-wrap">
       <a class="page-footer__logo" href="index.html">
         <img
-          src="http://placehold.it/150x40"
-          width="150"
-          height="40"
+          src="img/logo-pink-blue-mobile.svg"
+          width="148"
+          height="42"
           alt="Pink"
         >
       </a>
@@ -334,7 +364,7 @@
       <span class="page-footer__copyright-text">Разработано</span>
       <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/">
         <img
-          src="http://placehold.it/30x35"
+          src="img/logo-htmlacademy.svg"
           width="30"
           height="35"
           alt="HTML Academy"
@@ -343,5 +373,6 @@
     </div>
 
   </footer>
+
 </body>
 </html>

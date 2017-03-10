@@ -1,0 +1,73 @@
+.tariffs {
+  background-color: $tariffs-background;
+}
+
+.tariffs__inner {
+  @mixin container;
+  min-height: 475px;
+}
+
+.tariffs__table {
+  margin-bottom: 30px;
+}
+
+.tariffs-table__header {
+  background-color: $tariffs-table-head;
+  padding: 20px 0;
+  width: 280px;
+}
+
+.tariffs-table__name {
+  display: block;
+
+  color: $white;
+  font-size: 18px;
+  line-height: 1.66;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tariffs-table__price {
+  display: block;
+  color: $white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.tariffs-table__feature {
+}
+
+.tariffs-table__feature-name {
+  font-size: 14px;
+  line-height: 2.15;
+  text-transform: uppercase;
+}
+
+.tariffs-table__feature-value {
+  text-indent: -9999px;
+  font-size: 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+  }
+
+  &--yes::before {
+    background-image: url("../img/icon-yes.svg");
+  }
+
+  &--no::before {
+    background-image: url("../img/icon-no.svg");
+  }
+}
+
+.tariffs__controls {
+  text-align: center;
+  background-color: $tariffs-controls-bkg;
+}

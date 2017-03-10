@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  min-width: 320px;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+BODY.outlines-on > * {
+  outline: 1px solid deeppink;
+}
+BODY.outlines-on > * > * {
+  outline: 1px dashed lime;
+  outline-offset: -1px;
+}
+BODY.outlines-on > * > * > * {
+  outline: 2px dotted dodgerblue;
+  outline-offset: -2px;
+}

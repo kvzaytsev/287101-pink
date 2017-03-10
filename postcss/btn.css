@@ -1,0 +1,12 @@
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  padding: 15px;
+  text-decoration: none;
+
+  &--round {
+    border: 3px solid $white;
+    border-radius: 25px;
+  }
+}

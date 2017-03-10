@@ -3,19 +3,47 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,  initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <style>
+    HTML {
+      background: url( 'preview/pink-index-mobile.jpg' ) 50% 0 no-repeat;
+    }
+
+    @media (min-width: 660px) {
+      HTML {
+        background-image: url( 'preview/pink-index-tablet.jpg' );
+      }
+    }
+
+    @media (min-width: 960px) {
+      HTML {
+        background-image: url( 'preview/pink-index-desktop.jpg' );
+      }
+    }
+
+    BODY {
+      opacity: .5;
+    }
+
+  </style>
+  <script src="../node_modules/pixel-glass/script.js"></script>
+
 </head>
-<body>
+<body class="outlines-on">
   <h1 class="visually-hidden">Пинк - главная страница</h1>
 
   <header class="page-header">
     <nav class="main-nav main-nav--open">
       <div class="main-nav__panel">
-        <a class="logo">
+        <a class="main-nav__logo">
           <img
-            src="http://placehold.it/90x40"
-            width="90"
-            height="40"
+            width="75"
+            height="22"
             alt="Pink"
+            src="img/logo-pink-white-mobile.svg"
           >
         </a>
         <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
@@ -41,85 +69,85 @@
 
     <section class="downloads">
       <h2 class="visually-hidden">Загрузки</h2>
-      <img
-        class="downloads__preview"
-        src="http://placehold.it/320x400"
-        width="320"
-        height="400"
-        alt="Phone with a picture"
-      >
+      <div class="downloads__img-wrap">
+        <!--<img-->
+          <!--class="downloads__preview"-->
+          <!--src="img/iphone-hand-mobile@1x.png"-->
+          <!--width="320"-->
+          <!--height="400"-->
+          <!--alt="Phone with a picture"-->
+        <!--&gt;-->
+      </div>
       <a class="downloads__button btn btn--round" href="#">Скачать приложение</a>
       <div class="downloads__platforms">
         <a class="downloads__platform downloads__platform--apple" href="#">Apple</a>
         <a class="downloads__platform downloads__platform--android" href="#">Android</a>
         <a class="downloads__platform downloads__platform--win" href="#">Window</a>
       </div>
-      <p class="downloads__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="downloads__desc">Доступно для iPhone, iPad, Android,<br>
+        Windows Phone, OS X, Windows 8</p>
     </section>
 
     <section class="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <div class="advantages__slogan">
-        <p class="advantages__attraction">Устали от серости мегаполиса?</p>
-        <p class="advantages__attraction">Нам есть, что вам предложить!</p>
+      <div class="advantages__inner">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__slogan">
+          <p class="advantages__attraction">Устали от серости мегаполиса?</p>
+          <p class="advantages__attraction">Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantage">
+            <h3 class="advantage__header">Поднимает настроение</h3>
+            <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+              кликов!</p>
+          </li>
+          <li class="advantage">
+            <h3 class="advantage__header">Меняет мир вокруг</h3>
+            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект</p>
+          </li>
+          <li class="advantage">
+            <h3 class="advantage__header">Заводит новых друзей</h3>
+            <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
       </div>
-      <ul class="advantages__list">
-        <li class="advantage">
-          <h3 class="advantage__header">Поднимает настроение</h3>
-          <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов!</p>
-        </li>
-        <li class="advantage">
-          <h3 class="advantage__header">Меняет мир вокруг</h3>
-          <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект</p>
-        </li>
-        <li class="advantage">
-          <h3 class="advantage__header">Заводит новых друзей</h3>
-          <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
     </section>
 
     <section class="reviews">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews-slider">
-        <div class="reviews-slider__inner">
-          <div class="review-slide">
-            <p class="review-slide__author">Николай Петров</p>
-            <p class="review-slide__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложеннойфотографии!»
-            </p>
+      <div class="reviews__inner">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews-slider">
+          <div class="reviews-slider__inner">
+            <div class="review-slide">
+              <p class="review-slide__author">Николай Петров</p>
+              <p class="review-slide__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+            <div class="review-slide">
+              <p class="review-slide__author">Николай Петров</p>
+              <p class="review-slide__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+            <div class="review-slide">
+              <p class="review-slide__author">Николай Петров</p>
+              <p class="review-slide__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
           </div>
-          <div class="review-slide">
-            <p class="review-slide__author">Николай Петров</p>
-            <p class="review-slide__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложеннойфотографии!»
-            </p>
+          <div class="reviews-slider__controls">
+            <button type="button" class="reviews-slider__bullet reviews-slider__bullet--active">1</button>
+            <button type="button" class="reviews-slider__bullet">2</button>
+            <button type="button" class="reviews-slider__bullet">3</button>
           </div>
-          <div class="review-slide">
-            <p class="review-slide__author">Николай Петров</p>
-            <p class="review-slide__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложеннойфотографии!»
-            </p>
-          </div>
-        </div>
-        <div class="reviews-slider__controls">
-          <button type="button" class="reviews-slider__bullet reviews-slider__bullet--active">1</button>
-          <button type="button" class="reviews-slider__bullet">2</button>
-          <button type="button" class="reviews-slider__bullet">3</button>
         </div>
       </div>
-      <img
-        class="reviews__bottom-img"
-        src="http://placehold.it/160x280"
-        width="160"
-        height="280"
-        alt="Phone with a smile"
-      >
     </section>
 
     <section class="tariffs">
@@ -198,28 +226,28 @@
     <section class="contacts">
 
       <h2 class="contacts__title">
-        <span>Остались вопросы?</span>
-        <span>Свяжитесь с нами!</span>
+        <span class="contacts__title-part">Остались вопросы?</span>
+        <span class="contacts__title-part">Свяжитесь с нами!</span>
       </h2>
 
       <ul class="contacts__list">
         <li class="contacts__item">
           <h3 class="contacts__type">Звоните:</h3>
-          <a href="tel:+78125556666" class="contacts__tel">+7 (812) 555-66-66</a>
+          <a href="tel:+78125556666" class="contacts__value contacts__value--tel">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__type">Пишите:</h3>
-          <a href="mailto:mail@htmlacademy.ru" class="contacts__email">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__value contacts__value--email">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__type">Приезжайте в гости:</h3>
-          <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+          <address class="contacts__value contacts__value--address">ул. Большая Конюшенная, 19/8</address>
         </li>
       </ul>
 
       <div class="map">
         <img
-          src="http://placehold.it/320x200"
+          src="img/bg-map-mobile@1x.png"
           width="320"
           height="200"
           alt="Map"
