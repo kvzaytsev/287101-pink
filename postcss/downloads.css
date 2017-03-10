@@ -1,12 +1,15 @@
 .downloads {
-  background: $downloads-color;
   text-align: center;
+  min-height: 667px;
+}
+
+.downloads__inner {
+  @mixin container;
   min-height: 667px;
 }
 
 .downloads__img-wrap {
   min-height: 400px;
-  margin-bottom: 20px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: cover;
 }
@@ -30,7 +33,6 @@
 
 .downloads__platforms {
   justify-content: center;
-  margin-bottom: 25px;
 }
 
 .downloads__platform {

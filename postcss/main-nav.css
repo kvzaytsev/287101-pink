@@ -5,9 +5,18 @@
 .main-nav__panel {
   display: flex;
   justify-content: space-between;
-  background-color: $deepBlue;
-  border-bottom: 1px solid $menu-item-border-bottom;
-  padding: 21px;
+  align-items: center;
+
+  min-height: 70px;
+  @media ( min-width: 660px ) {
+    min-height: 110px;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  min-height: 255px;
 }
 
 .main-nav__logo {
@@ -16,34 +25,6 @@
 
 .main-nav__toggle {
   display: block;
-}
-
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-}
-
-.main-nam__item {
-  list-style: none;
-}
-
-.main-nav__link {
-  display: block;
-  padding: 16px 0 15px 0 ;
-  border-top: 1px solid $menu-item-border-top;
-  border-bottom: 1px solid $menu-item-border-bottom;
-  background-color: $deepBlue;
-  color: $white;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.77;
-}
-
-.main-nav__panel {
-
 }
 
 .main-nav__toggle {

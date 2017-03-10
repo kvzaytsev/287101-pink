@@ -1,13 +1,10 @@
 .reviews {
-  padding-top: 30px;
-  padding-bottom: 60px;
-  min-height: 378px;
+  min-height: 345px;
 }
 
-.reviews-slider__inner {
-  position: relative;
-  min-height: 250px;
-  margin-bottom: 20px;
+.reviews__inner {
+  @mixin container;
+  min-height: 345px;
 }
 
 .review-slide {

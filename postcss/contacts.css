@@ -1,7 +1,11 @@
 .contacts {
   text-align: center;
-  padding-top: 50px;
   min-height: 414px;
+}
+
+.contacts__inner {
+  @mixin container;
+  min-height: 475px;
 }
 
 .contacts__title {
