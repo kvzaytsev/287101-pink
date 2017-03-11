@@ -32,22 +32,19 @@
   <script src="../node_modules/pixel-glass/script.js"></script>
 
 </head>
+
 <body class="outlines-on">
-  <h1 class="visually-hidden">Пинк - главная страница</h1>
 
   <header class="page-header">
+
+    <div class="page-header__panel">
+      <a class="page-header__logo">
+        <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
+      </a>
+      <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+    </div>
+
     <nav class="main-nav main-nav--open">
-      <div class="main-nav__panel">
-        <a class="main-nav__logo">
-          <img
-            width="75"
-            height="22"
-            alt="Pink"
-            src="img/logo-pink-white-mobile.svg"
-          >
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
-      </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link">Главная</a>
@@ -63,11 +60,17 @@
         </li>
       </ul>
     </nav>
+
+    <h1 class="visually-hidden">
+      Пинк - главная страница
+    </h1>
+
   </header>
 
   <main class="index-page-content">
 
     <section class="downloads">
+
       <h2 class="visually-hidden">Загрузки</h2>
       <div class="downloads__img-wrap">
         <!--<img-->

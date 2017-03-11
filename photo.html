@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,  initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
@@ -34,18 +35,15 @@
 <body class="outlines-on">
 
   <header class="page-header">
+
+    <div class="page-header__panel">
+      <a class="page-header__logo">
+        <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
+      </a>
+      <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+    </div>
+
     <nav class="main-nav main-nav--open">
-      <div class="main-nav__panel">
-        <a class="logo" href="index.html">
-          <img
-            width="75"
-            height="22"
-            alt="Pink"
-            src="img/logo-pink-white-mobile.svg"
-          >
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
-      </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -62,9 +60,11 @@
       </ul>
     </nav>
 
-    <h1 class="page-header__title page-header__title--photo">
-      Фотографии пользователей
-    </h1>
+    <div class="page-header__title-wrap">
+      <h1 class="page-header__title page-header__title--photo">
+        Фотографии пользователей
+      </h1>
+    </div>
 
   </header>
 

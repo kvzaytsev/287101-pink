@@ -1,3 +1,24 @@
 .page-header {
   background-color: $deepBlue;
 }
+
+.page-header__title-wrap {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: cover;
+}
+
+.page-header__title {
+  @mixin container;
+
+  text-align: center;
+  color: $white;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
