@@ -2,6 +2,65 @@
   background-color: $deepBlue;
 }
 
+.page-header__inner {
+
+  @media (min-width: $desktop-width) {
+    @mixin container;
+
+    display: flex;
+    justify-content: space-between;
+
+    background: transparent;
+  }
+}
+
+.page-header__panel {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  border-bottom: 1px solid $black;
+
+  @media (min-width: $tablet-width) {
+
+    padding-top: 43px;
+    padding-right: 10px;
+    padding-bottom: 39px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: auto;
+    padding-top: 28px;
+    margin: 0;
+  }
+}
+
+.page-header__toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &--close::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-menu-cross.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .page-header__title-wrap {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: cover;

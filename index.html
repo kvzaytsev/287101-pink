@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <meta name="viewport" content="width=device-width,  initial-scale=1">
+  <!--<meta name="viewport" content="width=device-width,  initial-scale=1">-->
   <link rel="stylesheet" href="css/style.css">
 
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <style>
     HTML {
-      background: url( 'preview/pink-index-mobile.jpg' ) 50% 0 no-repeat;
+      background: url( 'preview/index/pink-index-mobile.jpg' ) 50% 0 no-repeat;
     }
 
     @media (min-width: 660px) {
       HTML {
-        background-image: url( 'preview/pink-index-tablet.jpg' );
+        background-image: url( 'preview/index/pink-index-tablet.jpg' );
       }
     }
 
     @media (min-width: 960px) {
       HTML {
-        background-image: url( 'preview/pink-index-desktop.jpg' );
+        background-image: url( 'preview/index/pink-index-desktop.jpg' );
       }
     }
 
@@ -36,30 +36,32 @@
 <body class="outlines-on">
 
   <header class="page-header">
+    <div class="page-header__inner">
 
-    <div class="page-header__panel">
-      <a class="page-header__logo">
-        <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
-      </a>
-      <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+      <div class="page-header__panel">
+        <a class="page-header__logo">
+          <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
+        </a>
+        <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+      </div>
+
+      <nav class="main-nav main-nav--open">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-nav main-nav--open">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
 
     <h1 class="visually-hidden">
       Пинк - главная страница
@@ -70,33 +72,34 @@
   <main class="index-page-content">
 
     <section class="downloads">
-
       <h2 class="visually-hidden">Загрузки</h2>
-      <div class="downloads__img-wrap">
-        <!--<img-->
-          <!--class="downloads__preview"-->
-          <!--src="img/iphone-hand-mobile@1x.png"-->
-          <!--width="320"-->
-          <!--height="400"-->
-          <!--alt="Phone with a picture"-->
-        <!--&gt;-->
+
+      <div class="downloads__inner">
+        <div class="downloads__content">
+          <div class="downloads__into">
+            <p class="downloads__into-text">Взгляните на жизнь иначе!</p>
+          </div>
+
+          <a class="downloads__button btn btn--round" href="#">Скачать приложение</a>
+          <div class="downloads__platforms">
+            <a class="downloads__platform downloads__platform--apple" href="#">Apple</a>
+            <a class="downloads__platform downloads__platform--android" href="#">Android</a>
+            <a class="downloads__platform downloads__platform--win" href="#">Window</a>
+          </div>
+          <p class="downloads__desc">
+            Доступно для iPhone, iPad, Android,<br>
+            Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </div>
-      <a class="downloads__button btn btn--round" href="#">Скачать приложение</a>
-      <div class="downloads__platforms">
-        <a class="downloads__platform downloads__platform--apple" href="#">Apple</a>
-        <a class="downloads__platform downloads__platform--android" href="#">Android</a>
-        <a class="downloads__platform downloads__platform--win" href="#">Window</a>
-      </div>
-      <p class="downloads__desc">Доступно для iPhone, iPad, Android,<br>
-        Windows Phone, OS X, Windows 8</p>
     </section>
 
     <section class="advantages">
       <div class="advantages__inner">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages__slogan">
-          <p class="advantages__attraction">Устали от серости мегаполиса?</p>
-          <p class="advantages__attraction">Нам есть, что вам предложить!</p>
+          <p class="advantages__attraction advantages__attraction--top">Устали от серости мегаполиса?</p>
+          <p class="advantages__attraction advantages__attraction--bottom">Нам есть, что вам предложить!</p>
         </div>
         <ul class="advantages__list">
           <li class="advantage">
@@ -117,40 +120,45 @@
       </div>
     </section>
 
+    <section class="investigation">
+      <div class="investigation__inner">
+        <h3 class="investigation__header">Эффект на 24 часа!</h3>
+        <p class="investigation__text">
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a class="investigation__more" href="#">
+          Узнать больше об исследовании
+        </a>
+      </div>
+    </section>
+
     <section class="reviews">
-      <div class="reviews__inner">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews-slider">
-          <div class="reviews-slider__inner">
-            <div class="review-slide">
-              <p class="review-slide__author">Николай Петров</p>
-              <p class="review-slide__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </div>
-            <div class="review-slide">
-              <p class="review-slide__author">Николай Петров</p>
-              <p class="review-slide__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </div>
-            <div class="review-slide">
-              <p class="review-slide__author">Николай Петров</p>
-              <p class="review-slide__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </div>
-          </div>
-          <div class="reviews-slider__controls">
-            <button type="button" class="reviews-slider__bullet reviews-slider__bullet--active">1</button>
-            <button type="button" class="reviews-slider__bullet">2</button>
-            <button type="button" class="reviews-slider__bullet">3</button>
-          </div>
+
+      <h2 class="visually-hidden">Отзывы</h2>
+
+      <div class="reviews__slider">
+
+        <div class="reviews__slide">
+          <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__author-aux">25 лет, водитель трамвая</p>
+          <p class="reviews__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
         </div>
       </div>
+
+      <div class="reviews__bullets">
+        <button type="button" class="reviews__bullet reviews__bullet--active">1</button>
+        <button type="button" class="reviews__bullet">2</button>
+        <button type="button" class="reviews__bullet">3</button>
+      </div>
+
+      <div class="reviews__nav">
+        <button type="button" class="reviews__arrow reviews__arrow--prev">Назад</button>
+        <button type="button" class="reviews__arrow reviews__arrow--next">Вперед</button>
+      </div>
+
     </section>
 
     <section class="tariffs">

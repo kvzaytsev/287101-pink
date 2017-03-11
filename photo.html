@@ -9,18 +9,18 @@
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <style>
     HTML {
-      background: url( 'preview/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
+      background: url( 'preview/photo/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
     }
 
     @media (min-width: 660px) {
       HTML {
-        background-image: url( 'preview/pink-photo-tablet.jpg' );
+        background-image: url( 'preview/photo/pink-photo-tablet.jpg' );
       }
     }
 
     @media (min-width: 960px) {
       HTML {
-        background-image: url( 'preview/pink-photo-desktop.jpg' );
+        background-image: url( 'preview/photo/pink-photo-desktop.jpg' );
       }
     }
 
@@ -35,30 +35,33 @@
 <body class="outlines-on">
 
   <header class="page-header">
+    <div class="page-header__inner">
 
-    <div class="page-header__panel">
-      <a class="page-header__logo">
-        <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
-      </a>
-      <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+      <div class="page-header__panel">
+        <a class="page-header__logo">
+          <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
+        </a>
+        <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+      </div>
+
+      <nav class="main-nav main-nav--open">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
-
-    <nav class="main-nav main-nav--open">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
 
     <div class="page-header__title-wrap">
       <h1 class="page-header__title page-header__title--photo">

@@ -1,20 +1,27 @@
 @import "mixins.css";
 
+/* general */
 @import "fonts.css";
 @import "variables.css";
 @import "common.css";
 @import "btn.css";
 
+/* common*/
+@import "page-footer.css";
+@import "page-header.css";
 @import "main-nav.css";
+
+/* index */
 @import "downloads.css";
 @import "advantages.css";
+@import "investigation.css";
 @import "reviews.css";
 @import "tariffs.css";
 @import "contacts.css";
+
+/* rest */
 @import "form-page-content.css";
 @import "trip-form.css";
-@import "page-footer.css";
-@import "page-header.css";
 @import "popup.css";
 @import "photo-page-content.css";
 @import "post-wall.css";

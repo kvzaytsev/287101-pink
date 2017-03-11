@@ -1,0 +1,50 @@
+.investigation {
+  @mixin container;
+
+  display: none;
+  padding-top: 96px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+
+    padding-top: 95px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 140px;
+    padding-bottom: 160px;
+  }
+}
+
+.investigation__inner {
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 583px;
+  }
+
+}
+
+.investigation__header {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+    line-height: 1.16;
+    font-weight: bold;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 21px;
+  }
+}
