@@ -166,7 +166,8 @@
       <div class="tariffs__slider">
         <table class="tariffs-table">
           <thead>
-            <tr>
+            <tr class="tariffs-table__row">
+              <th class="tariffs-table__header"></th>
               <th class="tariffs-table__header">
                 <span class="tariffs-table__name">База</span>
                 <span class="tariffs-table__price">1,99 USD</span>
@@ -177,50 +178,50 @@
               </th>
               <th class="tariffs-table__header">
                 <span class="tariffs-table__name">Анлим</span>
-                <span class="tariffs-table__price">1,99 USD</span>
+                <span class="tariffs-table__price">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="tariffs-table__row">
               <td class="tariffs-table__feature">
                 <span class="tariffs-table__feature-name">Розовый фильтр</span>
+              </td>
+              <td class="tariffs-table__feature" data-feature-name="Розовый фильтр">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
               </td>
-              <td class="tariffs-table__feature">
-                <span class="tariffs-table__feature-name">Розовый фильтр</span>
+              <td class="tariffs-table__feature" data-feature-name="Розовый фильтр">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
               </td>
-              <td class="tariffs-table__feature">
-                <span class="tariffs-table__feature-name">Розовый фильтр</span>
+              <td class="tariffs-table__feature" data-feature-name="Розовый фильтр">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
               </td>
             </tr>
-            <tr>
+            <tr class="tariffs-table__row">
               <td class="tariffs-table__feature">
                 <span class="tariffs-table__feature-name">Смайлики</span>
+              </td>
+              <td class="tariffs-table__feature" data-feature-name="Смайлики">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--no">Нет</span>
               </td>
-              <td class="tariffs-table__feature">
-                <span class="tariffs-table__feature-name">Смайлики</span>
+              <td class="tariffs-table__feature" data-feature-name="Смайлики">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
               </td>
-              <td class="tariffs-table__feature">
-                <span class="tariffs-table__feature-name">Смайлики</span>
+              <td class="tariffs-table__feature" data-feature-name="Смайлики">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
               </td>
             </tr>
-            <tr>
+            <tr class="tariffs-table__row">
               <td class="tariffs-table__feature">
                 <span class="tariffs-table__feature-name">Комментарии</span>
+              </td>
+              <td class="tariffs-table__feature" data-feature-name="Комментарии">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--no">Нет</span>
               </td>
-              <td class="tariffs-table__feature">
-                <span class="tariffs-table__feature-name">Комментарии</span>
+              <td class="tariffs-table__feature" data-feature-name="Комментарии">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--no">Нет</span>
               </td>
-              <td class="tariffs-table__feature">
-                <span class="tariffs-table__feature-name">Комментарии</span>
+              <td class="tariffs-table__feature" data-feature-name="Комментарии">
                 <span class="tariffs-table__feature-value tariffs-table__feature-value--yes">Да</span>
               </td>
             </tr>
@@ -242,17 +243,17 @@
       </h2>
 
       <ul class="contacts__list">
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--tel">
           <h3 class="contacts__type">Звоните:</h3>
-          <a href="tel:+78125556666" class="contacts__value contacts__value--tel">+7 (812) 555-66-66</a>
+          <a href="tel:+78125556666" class="contacts__value">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--email">
           <h3 class="contacts__type">Пишите:</h3>
-          <a href="mailto:mail@htmlacademy.ru" class="contacts__value contacts__value--email">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__value">mail@htmlacademy.ru</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--address">
           <h3 class="contacts__type">Приезжайте в гости:</h3>
-          <address class="contacts__value contacts__value--address">ул. Большая Конюшенная, 19/8</address>
+          <address class="contacts__value">ул. Большая Конюшенная, 19/8</address>
         </li>
       </ul>
 
@@ -268,5 +269,37 @@
     </section>
 
   </main>
+  <footer class="page-footer page-footer--index">
+
+    <div class="page-footer__logo-wrap">
+      <a class="page-footer__logo" href="index.html">
+        <img
+          src="img/logo-pink-blue-mobile.svg"
+          width="148"
+          height="42"
+          alt="Pink"
+        >
+      </a>
+    </div>
+
+    <div class="page-footer__socials-group">
+      <a class="page-footer__social page-footer__social--tweeter" href="#">Twitter</a>
+      <a class="page-footer__social page-footer__social--facebook" href="#">Facebook</a>
+      <a class="page-footer__social page-footer__social--youtube" href="#">Youtube</a>
+    </div>
+
+    <div class="page-footer__copyright">
+      <span class="page-footer__copyright-text">Разработано</span>
+      <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/">
+        <img
+          src="img/logo-htmlacademy.svg"
+          width="30"
+          height="35"
+          alt="HTML Academy"
+        >
+      </a>
+    </div>
+
+  </footer>
 </body>
 </html>

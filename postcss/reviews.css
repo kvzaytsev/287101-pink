@@ -2,16 +2,16 @@
   @mixin container;
 
   padding-top: 40px;
-  padding-bottom: 48px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     padding-top: 75px;
-    padding-bottom: 68px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 187px;
-    padding-bottom: 49px;
+    padding-bottom: 25px;
   }
 }
 
@@ -84,6 +84,10 @@
 
 .reviews__bullets {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .reviews__nav {
