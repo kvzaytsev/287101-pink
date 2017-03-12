@@ -20,9 +20,14 @@
 @import "contacts.css";
 @import "map.css";
 
+/* form */
+
+@import "trip.css";
+@import "trip-form.css";
+
 /* rest */
 @import "form-page-content.css";
-@import "trip-form.css";
+
 @import "popup.css";
 @import "photo-page-content.css";
 @import "post-wall.css";

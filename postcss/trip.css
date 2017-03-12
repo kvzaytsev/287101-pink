@@ -1,0 +1,29 @@
+.trip {
+
+}
+
+.trip__condition-wrap {
+  @mixin container;
+
+  padding-top: 47px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 97px;
+  }
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.trip__condition {
+  margin: 0;
+}
+
+.trip__condition-aux {
+  margin: 0;
+  display: none;
+}
+

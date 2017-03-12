@@ -69,15 +69,34 @@
 .page-header__title {
   @mixin container;
 
-  text-align: center;
-  color: $white;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 
   font-size: 24px;
   font-weight: 300;
   line-height: 1.25;
+  text-align: center;
+  color: $white;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 1.2;
   }
+
+  &--form {
+     padding-top: 30px;
+     padding-bottom: 48px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 70px;
+      padding-bottom: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 59px;
+      padding-bottom: 99px;
+    }
+  }
 }
+
