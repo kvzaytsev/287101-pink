@@ -1,7 +1,7 @@
 .main-nav {
 
   @media (min-width: $desktop-width) {
-    width: 625px;
+    width: 641px;
   }
 }
 
@@ -9,6 +9,8 @@
   @mixin reset;
 
   min-height: 255px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media (min-width: $desktop-width) {
     display: flex;

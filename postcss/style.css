@@ -23,7 +23,12 @@
 /* form */
 
 @import "trip.css";
-@import "trip-form.css";
+@import "form/trip-form.css";
+@import "form/person.css";
+@import "form/achievements.css";
+@import "form/contacts.css";
+@import "form/platforms.css";
+@import "form/emotions.css";
 
 /* rest */
 @import "form-page-content.css";

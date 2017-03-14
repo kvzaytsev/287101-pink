@@ -87,16 +87,9 @@
       width: 250px;
       margin-bottom: 28px;
     }
-
-    @media (min-width: $desktop-widths) {
-      order: 1;
-    }
   }
 
   &--email {
-    @media (min-width: $desktop-width) {
-      order: 2;
-    }
   }
 }
 
@@ -125,15 +118,6 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-
-  @media (min-width: $tablet-widths) {
-    margin: 0 auto;
-    margin-bottom: 8px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    margin-bottom: 26px;
-  }
 }
 
 .contacts__value {

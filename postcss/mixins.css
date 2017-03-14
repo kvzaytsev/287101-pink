@@ -17,3 +17,8 @@
   list-style: none;
 }
 
+@define-mixin reset-fieldset {
+  padding: 0;
+  border: none;
+}
+
