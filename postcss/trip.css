@@ -10,7 +10,7 @@
 
   font-size: 14px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 
   @media (min-width: $tablet-width) {
