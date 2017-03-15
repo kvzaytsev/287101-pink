@@ -78,7 +78,7 @@ input[type="checkbox"] {
   padding-left: 70px;
   font-size: 18px;
   line-height: 30px;
-  color: #283645;
+  color: $deepBlue;
 
   @media (min-width: $tablet-width) {
     padding-left: 58px;
@@ -92,7 +92,7 @@ input[type="checkbox"] + label::before {
   height: 35px;
   width: 35px;
 
-  border: 2px solid #e5e5e5;
+  border: 2px solid $lightGrey;
   border-radius: 2px;
 
   top: -3px;

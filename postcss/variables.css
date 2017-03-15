@@ -6,6 +6,8 @@ $white: #ffffff;
 $black: #000000;
 $grey: #f2f2f2;
 $contacts-red: #d22856;
+$lightGrey: #e5e5e5;
+$green: #29ac68;
 
 $menu-item-border-top: #485461;
 $menu-item-border-bottom: #000001;
@@ -17,9 +19,11 @@ $advantages-background: $grey;
 $tariffs-table-head: $deepBlue;
 $tariffs-controls-bkg: $grey;
 $tariffs-background: $grey;
-$tariffs-table-border: #e5e5e5;
+$tariffs-table-border: $lightGrey;
 
 $achievements-bkg: $grey;
 $platforms-bkg: $grey;
 
 $red: #D12358;
+
+$newPostGrey: #dddfe0;

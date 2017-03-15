@@ -71,7 +71,7 @@
 
   font-size: 18px;
   line-height: 30px;
-  color: #283645;
+  color: $deepBlue;
 
   @media (min-width: $tablet-width) {
     padding-left: 59px;
@@ -89,7 +89,7 @@ input[type="radio"] + label::before {
   height: 35px;
   width: 35px;
 
-  border: 2px solid #e5e5e5;
+  border: 2px solid $lightGrey;
   border-radius: 50%;
 
   top: -3px;

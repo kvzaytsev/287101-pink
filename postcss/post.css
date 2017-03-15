@@ -19,7 +19,7 @@
   width: 280px;
   margin-bottom: 20px;
   outline: 1px solid blue;
-  background: #f2f2f2;
+  background: $grey;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -168,7 +168,7 @@
 .post__like-count {
   font-size: 12px;
   line-height: 24px;
-  color: #d22856;
+  color: $contacts-red;
   text-transform: uppercase;
 
   @media (max-width: $tablet-width) {
@@ -183,6 +183,7 @@
   width: 13px;
   height: 12px;
   font-size: 0;
+  fill: $contacts-red;
   background-image: url(../img/icon-heart.svg);
 
   @media (min-width: $tablet-width) {

@@ -275,45 +275,74 @@
         Выкладывайте все, что накопилось в телефоне!
       </h2>
 
-      <form class="new-post-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="new-post__inner">
+        <form class="new-post-form" action="https://echo.htmlacademy.ru/" method="post">
 
-        <div class="new-post-form__preview">
-          <img
-            src="http://placehold.it/280x380"
-            width="280"
-            height="380"
-            alt="Предпросмотр Фотографии"
-          >
-        </div>
-
-        <div class="new-post-form__filters">
-
-          <button class="new-post-form__filter new-post-form__filter--crop new-post-form__filter--active" type="button">
-            <img src="http://placehold.it/44x44" width="44" height="44" alt="Обрезать">
-          </button>
-
-          <button class="new-post-form__filter new-post-form__filter--fill" type="button">
-            <img src="http://placehold.it/44x44" width="44" height="44" alt="Заливка">
-          </button>
-
-          <button class="new-post-form__filter new-post-form__filter--сontrast" type="button">
-            <img src="http://placehold.it/44x44" width="44" height="44" alt="Контрастность">
-          </button>
-
-          <div class="new-post-form__slider">
-            <div class="new-post-form__slider-bar">
-              <div class="new-post-form__slider-handle"></div>
-            </div>
+          <div class="new-post-form__preview">
+            <img
+              src="http://placehold.it/280x374"
+              width="280"
+              height="374"
+              alt="Предпросмотр Фотографии"
+            >
           </div>
 
-        </div>
+          <div class="new-post-form__content">
 
-        <div class="new-post-form__actions">
-          <button type="submit" class="new-post-form__submit">Запостить</button>
-          <button type="reset" class="new-post-form__reset">Отмена</button>
-        </div>
+            <div class="new-post-form__filters">
 
-      </form>
+              <div class="new-post-form__filter-wrap new-post-form__filter-wrap--crop">
+                <button class="new-post-form__filter new-post-form__filter--crop new-post-form__filter--active" type="button">
+                  Обрезать
+                </button>
+                <div class="new-post-form__slider new-post-form__slider--crop">
+                  <div class="new-post-form__slider-bar">
+                    <div class="new-post-form__slider-handle new-post-form__slider-handle--crop"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="new-post-form__filter-wrap new-post-form__filter-wrap--fill">
+                <button class="new-post-form__filter new-post-form__filter--fill" type="button">
+                  Заливка
+                </button>
+                <div class="new-post-form__slider new-post-form__slider--fill">
+                  <div class="new-post-form__slider-bar">
+                    <div class="new-post-form__slider-handle new-post-form__slider-handle--fill"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="new-post-form__filter-wrap new-post-form__filter-wrap--сontrast">
+                <button class="new-post-form__filter new-post-form__filter--сontrast" type="button">
+                  Контрастность
+                </button>
+                <div class="new-post-form__slider new-post-form__slider--сontrast">
+                  <div class="new-post-form__slider-bar">
+                    <div class="new-post-form__slider-handle new-post-form__slider-handle--сontrast"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="new-post-form__slider new-post-form__slider--сommon">
+              <div class="new-post-form__slider-bar">
+                <div class="new-post-form__slider-handle"></div>
+              </div>
+            </div>
+
+            <div class="new-post-form__actions">
+              <button type="submit" class="new-post-form__submit btn btn--round">Запостить</button>
+              <button type="reset" class="new-post-form__reset btn btn--round">Отмена</button>
+            </div>
+
+          </div>
+
+
+
+        </form>
+      </div>
 
     </section>
 

@@ -1,110 +1,49 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
-  <meta name="viewport" content="width=device-width,  initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <style>
-    HTML {
-      background: url( 'preview/pink-index-mobile.jpg' ) 50% 0 no-repeat;
-    }
-
-    @media (min-width: 660px) {
-      HTML {
-        background-image: url( 'preview/pink-index-tablet.jpg' );
-      }
-    }
-
-    @media (min-width: 960px) {
-      HTML {
-        background-image: url( 'preview/pink-index-desktop.jpg' );
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-
-  </style>
-  <script src="../node_modules/pixel-glass/script.js"></script>
-
-</head>
-<body class="outlines-on">
-  <h1 class="visually-hidden">Пинк - главная страница</h1>
-
-  <header class="page-header">
-    <nav class="main-nav main-nav--open">
-
-      <div class="main-nav__panel">
-        <a class="main-nav__logo"></a>
-      </div>
-
-      <ul class="main-nav__list">
-      </ul>
-
-    </nav>
-  </header>
-
-  <main class="index-page-content">
-
-    <section class="downloads">
-      <div class="downloads__inner">
-        <div class="downloads__platforms">
-        </div>
-      </div>
-    </section>
-
-    <section class="advantages">
-      <div class="advantages__inner">
-
-        <div class="advantages__slogan">
-        </div>
-
-        <ul class="advantages__list">
-        </ul>
-
-      </div>
-    </section>
-
-    <section class="reviews">
-      <div class="reviews__inner">
-
-        <div class="reviews-slider">
-
-          <div class="reviews-slider__inner">
+<section class="add-photo">
+  <h3 class="add-photo__title">
+    <span class="add-photo__title--part-top">Затмите их всех!</span>
+    <span class="add-photo__title--part-bottom">Выкладывайте все, что накопилось в телефоне!</span>
+  </h3>
+  <div class="add-photo__content">
+    <div class="add-photo__picture">
+      <img src="img/photo-7-mobile@1x.jpg" alt="PostPhoto">
+    </div>
+    <div class="add-photo__action-block">
+      <div class="add-photo__tools  tools">
+        <div class="tool-wrapper">
+          <button class="tool  tool--crop">Обрезать</button>
+          <div class="add-photo__range  add-photo__range--crop">
+            <div class="add-photo__line-range">
+              <div class="add-photo__toggle-range  add-photo__toggle-range--crop"></div>
+            </div>
           </div>
-
-          <div class="reviews-slider__controls">
-          </div>
-
         </div>
-
-      </div>
-    </section>
-
-    <section class="tariffs">
-      <div class="tariffs__inner">
-        <div class="tariffs__slider">
-
-          <div class="tariffs__controls">
+        <div class="tool-wrapper">
+          <button class="tool  tool--paint">Заливка</button>
+          <div class="add-photo__range  add-photo__range--paint">
+            <div class="add-photo__line-range">
+              <div class="add-photo__toggle-range  add-photo__toggle-range--paint"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tool-wrapper">
+          <button class="tool  tool--contrast">Контраст</button>
+          <div class="add-photo__range  add-photo__range--contrast">
+            <div class="add-photo__line-range">
+              <div class="add-photo__toggle-range  add-photo__toggle-range--contrast"></div>
+            </div>
           </div>
         </div>
       </div>
-
-    </section>
-
-    <section class="contacts">
-      <div class="contacts__inner">
-        </ul>
-
-        <div class="map"></div>
-
+      <!--БЕГУНОК-->
+      <div class="add-photo__range  add-photo__range--common">
+        <div class="add-photo__line-range">
+          <div class="add-photo__toggle-range"></div>
+        </div>
       </div>
-    </section>
-
-  </main>
-</body>
-</html>
+      <div class="add-photo__control-btn">
+        <button class="add-photo__btn add-photo__btn--post">Запостить</button>
+        <button class="add-photo__btn add-photo__btn--cancel">Отмена</button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,3 +1,308 @@
-.new-post {
-  min-width: 750px;
+.new-post__header {
+  @mixin container;
+
+  padding-top: 24px;
+  padding-bottom: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 300;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-top: 45px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
+
+}
+
+.new-post__inner {
+  background: $grey;
+}
+
+.new-post-form {
+  @mixin container;
+
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 13px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-left: 90px;
+    padding-right: 60px;
+    padding-bottom: 21px;
+  }
+}
+
+.new-post-form__preview {
+  margin-bottom: 40px;
+  font-size: 0;
+
+  @media (min-width: $tablet-width)  {
+    min-width: auto;
+    width: 300px;
+  }
+}
+
+.new-post-form__preview img {
+  width: 100%;
+}
+
+.new-post-form__filters {
+  margin-bottom: 17px;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    width: 300px;
+
+    flex-direction: column;
+    padding-left: 28px;
+    padding-right: 20px;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 420px;
+    margin-bottom: 91px;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+.new-post-form__filter-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+
+  border-bottom: 1px solid $newPostGrey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+  }
+}
+
+.new-post-form__filter-wrap--сontrast {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+
+}
+
+.new-post-form__filter {
+
+  display: block;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border: none;
+  box-sizing: border-box;
+
+  font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.new-post-form__slider  {
+  display: none;
+  margin: 0 auto 28px auto;
+  position: relative;
+
+  padding: 0;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+  }
+}
+
+.new-post-form__slider--сommon  {
+  display: table;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.new-post-form__slider-bar {
+  position: relative;
+  top: 6px;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 240px;
+  height: 2px;
+  background: $deepBlue;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 290px;
+  }
+}
+
+.new-post-form__slider-handle {
+  position: absolute;
+  top: -6px;
+  left: 193px;
+
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  background: $white;
+  border: 2px solid $contacts-re;
+  border-radius: 50%;
+}
+
+.new-post-form__actions {
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &::before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    top:0;
+    display: block;
+    width: 100%;
+    background-color: $newPostGrey;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    width: 300px;
+    padding-left: 27px;
+    padding-right: 14px;
+
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+.new-post-form__submit {
+  border-color: $contacts-red;
+  color: $contacts-red;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0px;
+    width: 182px;
+  }
+}
+
+.new-post-form__reset {
+  border-color: $newPostGrey;
+  color: $newPostGrey;
+
+  @media (min-width: $desktop-width) {
+    width: 182px;
+  }
+}
+
+
+.new-post-form__slider-handle--crop {
+  left: 147px;
+
+  @media (min-width: $desktop-width) {
+    left: 73px;
+  }
+}
+
+.new-post-form__slider-handle--fill {
+  left: 26px;
+
+  @media (min-width: $desktop-width) {
+    left: 249px;
+  }
+}
+
+.new-post-form__slider-handle--сontrast {
+  left: 97px;
+
+  @media (min-width: $desktop-width) {
+    left: 162px;
+  }
 }

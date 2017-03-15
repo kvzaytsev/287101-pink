@@ -14,9 +14,9 @@
     border: none ;
     padding-top: 23px;
     padding-bottom: 22px;
-    background-color: #29ac68;
+    background-color: $green;
 
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
   }
 }

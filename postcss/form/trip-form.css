@@ -29,7 +29,7 @@
   box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
-  color: #d22856;
+  color: $contacts-red;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -109,7 +109,7 @@
 
 .trip-form__clarification-asterisk {
   display: inline-block;
-  color: #d22856;
+  color: $contacts-red;
 }
 
 .trip-form__clarification-aux {
