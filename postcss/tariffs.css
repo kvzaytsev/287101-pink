@@ -166,14 +166,14 @@
 
   &--yes {
     background-image: url("../img/icon-yes.svg");
-     width: 32px;
-     height: 28px;
+    width: 32px;
+    height: 28px;
   }
 
   &--no {
     background-image: url("../img/icon-no.svg");
-     width: 28px;
-     height: 28px;
+    width: 28px;
+    height: 28px;
   }
 }
 

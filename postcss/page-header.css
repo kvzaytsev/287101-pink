@@ -83,8 +83,8 @@
   }
 
   &--form {
-     padding-top: 30px;
-     padding-bottom: 48px;
+    padding-top: 30px;
+    padding-bottom: 48px;
 
     @media (min-width: $tablet-width) {
       padding-top: 70px;
@@ -98,8 +98,8 @@
   }
 
   &--photo {
-     padding-top: 30px;
-     padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 80px;
 
     @media (min-width: $tablet-width) {
       padding-top: 70px;
@@ -114,4 +114,3 @@
     }
   }
 }
-
