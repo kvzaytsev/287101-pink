@@ -28,9 +28,7 @@
   @media (min-width: $tablet-width) {
 
     padding-top: 43px;
-    padding-right: 30px;
     padding-bottom: 39px;
-    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +94,23 @@
     @media (min-width: $desktop-width) {
       padding-top: 62px;
       padding-bottom: 101px;
+    }
+  }
+
+  &--photo {
+     padding-top: 30px;
+     padding-bottom: 80px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 70px;
+      padding-bottom: 140px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 62px;
+      padding-bottom: 101px;
+      padding-left: 200px;
+      padding-right: 200px;
     }
   }
 }

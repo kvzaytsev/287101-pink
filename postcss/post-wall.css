@@ -1,12 +1,34 @@
 .post-wall {
-  border: 1px solid #ffffff;
+  @mixin container;
 }
 
 .post-wall__header {
-  margin: 0 0 45px 0;
+  margin: 0;
+
+  padding-top: 45px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 49px;
+
   font-size: 14px;
-  line-height: 2.1;
+  line-height: 30px;
+  font-weight: 400;
   text-align: center;
-  padding: 0px 20px;
-  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 92px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 74px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 770px;
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-bottom: 88px;
+  }
 }
