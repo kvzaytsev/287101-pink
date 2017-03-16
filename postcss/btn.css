@@ -9,4 +9,14 @@
     border: 3px solid $white;
     border-radius: 25px;
   }
+
+  &--square {
+    border: none ;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    background-color: $green;
+
+    text-transform: uppercase;
+    color: $white;
+  }
 }

@@ -10,3 +10,14 @@
     width: 960px;
   }
 }
+
+@define-mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@define-mixin reset-fieldset {
+  padding: 0;
+  border: none;
+}

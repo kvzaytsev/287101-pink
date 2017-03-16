@@ -1,73 +1,222 @@
 .tariffs {
-  background-color: $tariffs-background;
-}
-
-.tariffs__inner {
   @mixin container;
-  min-height: 475px;
+
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 96px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 87px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 140px;
+    padding-bottom: 97px;
+  }
 }
 
-.tariffs__table {
-  margin-bottom: 30px;
+.tariffs-table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 840px;
+
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.tariffs-table__row {
 }
 
 .tariffs-table__header {
+
+  padding-top: 17px;
+  padding-bottom: 18px;
+
+  border-left: 2px solid $tariffs-table-border;
+  border-right: 2px solid $tariffs-table-border;
+
   background-color: $tariffs-table-head;
-  padding: 20px 0;
-  width: 280px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    border-bottom: none;
+  }
 }
 
 .tariffs-table__name {
   display: block;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
 
   color: $white;
-  font-size: 18px;
-  line-height: 1.66;
-  font-weight: bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 31px;
+  }
 }
 
 .tariffs-table__price {
   display: block;
-  color: $white;
-  font-weight: 300;
+  margin: 0;
+
   font-size: 24px;
-  line-height: 1.25;
+  line-height: 34px;
+  font-weight: 300;
+
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.tariffs-table__header:first-child,
+.tariffs-table__feature:first-child {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+    text-align: left;
+  }
+}
+
+.tariffs-table__header:first-child {
+  background: none;
+  border: none;
 }
 
 .tariffs-table__feature {
-}
-
-.tariffs-table__feature-name {
+  position: relative;
+  padding: 16px 22px 15px 22px;
+  border: 2px solid $tariffs-table-border;
+  box-sizing: border-box;
+  text-align: center;
   font-size: 14px;
-  line-height: 2.15;
-  text-transform: uppercase;
+
+  &::before {
+    content: attr(data-feature-name);
+    display: block;
+    float: left;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 15px 9px 15px;
+
+    width: 25%;
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 26px 15px 20px;
+
+    font-size: 18px;
+  }
 }
 
 .tariffs-table__feature-value {
-  text-indent: -9999px;
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+
   font-size: 0;
 
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background-repeat: no-repeat;
-    background-position: center;
-    vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    float: none;
+    margin: 0 auto;
   }
 
-  &--yes::before {
+  &--yes {
     background-image: url("../img/icon-yes.svg");
+    width: 32px;
+    height: 28px;
   }
 
-  &--no::before {
+  &--no {
     background-image: url("../img/icon-no.svg");
+    width: 28px;
+    height: 28px;
   }
 }
 
 .tariffs__controls {
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   background-color: $tariffs-controls-bkg;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tariffs__bullet {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.tariffs__bullet::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background: #bac1c7;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.tariffs__bullet:last-child::before {
+  margin-right: 0px;
+}
+
+.tariffs__bullet--active::before {
+  background: none;
+  box-shadow: 0 0 0 3px $black;
+  cursor: auto;
 }

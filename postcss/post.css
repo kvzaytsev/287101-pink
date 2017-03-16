@@ -1,3 +1,188 @@
+.post-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
 .post {
-  min-height: 456px;
+  width: 280px;
+  margin-bottom: 20px;
+  outline: 1px solid blue;
+  background: $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.post--of-a-day {
+  position: relative;
+  min-width: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.post__img-wrap {
+  font-size: 0;
+  display: block;
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+    height: 400px;
+  }
+}
+
+.post__img-wrap--of-a-day {
+  min-width: 320px;
+  padding-left: 0;
+  padding-right: 0;
+
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 700px;
+    min-height: 510px;
+    margin-left: -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 960px;
+    min-height: 505px;
+
+    margin-left: -10px;
+  }
+}
+
+.post__content {
+  padding-left: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 29px 24px 29px;
+  }
+}
+
+.post__content--of-a-day {
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+}
+
+.post__summary {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.post__author {
+  font-weight: bold;
+}
+
+.post__time {
+  font-weight: 300;
+}
+
+.post__text {
+  width: 240px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+    min-height: 48px;
+  }
+
+}
+
+.post__text--of-a-day {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.post__likes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 240px;
+  }
+}
+
+.post__like-count {
+  font-size: 12px;
+  line-height: 24px;
+  color: $contacts-red;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+}
+
+.post__like-btn {
+  border: none;
+  display: block;
+  width: 13px;
+  height: 12px;
+  font-size: 0;
+  fill: $contacts-red;
+  background-image: url(../img/icon-heart.svg);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+  }
 }

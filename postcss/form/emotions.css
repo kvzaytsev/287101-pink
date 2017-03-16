@@ -1,0 +1,58 @@
+.trip-form__emotions-wrap {
+  order: 5;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    @mixin container;
+
+    order: 4;
+    padding: 7px 8px 0 8px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-width: 100%;
+  }
+}
+
+.trip-form__emotions {
+
+  @media (max-width: $tablet-width) {
+    @mixin reset-fieldset;
+    @mixin container;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+}
+
+.trip-form__emotions-text {
+  min-width: 275px;
+  padding: 0;
+  min-height: 197px;
+  margin-top: 15px;
+  margin-left: 20px;
+
+  border-radius: 2px;
+  border: 2px solid $lightGrey;
+
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 495px;
+    min-height: 190px;
+    margin-top: 32px;
+    margin-bottom: 36px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 125px;
+    min-width: 815px;
+    margin-top: 29px;
+    margin-bottom: 28px;
+  }
+}

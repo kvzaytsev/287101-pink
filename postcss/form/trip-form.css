@@ -1,0 +1,122 @@
+.trip-form {
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    @mixin container;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.trip-form__legend {
+
+  display: block;
+  /*float: left;*/
+  width: 100%;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  color: $contacts-red;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+
+  &--contacts {
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding: 0 25px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0 25px;
+  }
+}
+
+.trip-form__bottom {
+  order: 6;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    @mixin container;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 66px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-width: 100%;
+
+    padding-top: 65px;
+    padding-bottom: 10px;
+  }
+}
+
+.trip-form__submit {
+
+  width: 100%;
+  margin-bottom: 36px;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+}
+
+.trip-form__clarification {
+  margin: 0;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.trip-form__clarification-asterisk {
+  display: inline-block;
+  color: $contacts-red;
+}
+
+.trip-form__clarification-aux {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: auto;
+  }
+}

@@ -3,21 +3,28 @@ $desktop-width: 960px;
 
 $deepBlue: #283645;
 $white: #ffffff;
+$black: #000000;
 $grey: #f2f2f2;
 $contacts-red: #d22856;
+$lightGrey: #e5e5e5;
+$green: #29ac68;
 
 $menu-item-border-top: #485461;
 $menu-item-border-bottom: #000001;
 
 $downloads-text-color: $white;
+$downloads-bkg: #1e2631;
 
 $advantages-background: $grey;
 
 $tariffs-table-head: $deepBlue;
 $tariffs-controls-bkg: $grey;
 $tariffs-background: $grey;
+$tariffs-table-border: $lightGrey;
 
 $achievements-bkg: $grey;
 $platforms-bkg: $grey;
 
 $red: #D12358;
+
+$newPostGrey: #dddfe0;
