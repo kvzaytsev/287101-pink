@@ -5,10 +5,7 @@
 .post-wall__header {
   margin: 0;
 
-  padding-top: 45px;
-  padding-left: 35px;
-  padding-right: 35px;
-  margin-bottom: 49px;
+  padding: 45px 35px 49px 35px;
 
   font-size: 14px;
   line-height: 30px;
@@ -19,7 +16,7 @@
     padding-top: 92px;
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 74px;
+    margin-bottom: 26px;
 
     font-size: 18px;
     line-height: 30px;
@@ -29,6 +26,6 @@
     max-width: 770px;
     padding-left: 160px;
     padding-right: 160px;
-    margin-bottom: 88px;
+    margin-bottom: 39px;
   }
 }

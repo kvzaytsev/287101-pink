@@ -42,7 +42,7 @@
 }
 
 .trip-form__platforms-list {
-  @mixin reset;
+  @mixin reset-list;
 
   padding-top: 38px;
   padding-bottom: 3px;

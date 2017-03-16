@@ -4,14 +4,10 @@
 
   @media (min-width: $tablet-width) {
     @mixin container;
+
     order: 4;
-
-    padding-top: 7px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 0;
+    padding: 7px 8px 0 8px;
     box-sizing: border-box;
-
   }
 
   @media (min-width: $desktop-width) {

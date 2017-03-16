@@ -7,6 +7,7 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
+    padding-top: 87px;
     padding-bottom: 65px;
   }
 
@@ -179,7 +180,7 @@
 
 .tariffs__controls {
   position: absolute;
-  bottom: 40px;
+  bottom: 47px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -188,4 +189,34 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.tariffs__bullet {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.tariffs__bullet::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background: #bac1c7;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.tariffs__bullet:last-child::before {
+  margin-right: 0px;
+}
+
+.tariffs__bullet--active::before {
+  background: none;
+  box-shadow: 0 0 0 3px $black;
+  cursor: auto;
 }

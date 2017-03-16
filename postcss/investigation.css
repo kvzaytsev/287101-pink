@@ -4,18 +4,19 @@
   display: none;
   padding-top: 96px;
   padding-bottom: 30px;
+  margin-bottom: 66px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
 
-    padding-top: 95px;
+    padding-top: 60px;
     padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 140px;
-    padding-bottom: 160px;
+    padding-top: 103px;
+    padding-bottom: 183px;
   }
 }
 
@@ -47,4 +48,16 @@
     margin: 0;
     margin-bottom: 21px;
   }
+}
+
+.investigation__text {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.investigation__more {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 22px;
 }

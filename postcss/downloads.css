@@ -1,5 +1,6 @@
 .downloads {
   padding-top: 395px;
+  background-color: $downloads-bkg;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -77,10 +78,11 @@
   color: $downloads-text-color;
   font-size: 18px;
   line-height: 1;
+  font-weight: bold;
 }
 
 .downloads__platforms {
-
+  margin-bottom: 19px;
 }
 
 .downloads__platform {

@@ -18,11 +18,7 @@
   display: flex;
   justify-content: space-between;
 
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 22px;
-  padding-left: 20px;
-
+  padding: 20px 20px 22px 20px;
   border-bottom: 1px solid $black;
 
   @media (min-width: $tablet-width) {
@@ -107,10 +103,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 62px;
-      padding-bottom: 101px;
-      padding-left: 200px;
-      padding-right: 200px;
+      padding: 62px 200px 101px 200px;
     }
   }
 }

@@ -27,7 +27,7 @@
 }
 
 .trip-form__achievements-list {
-  @mixin reset;
+  @mixin reset-list;
 
   display: flex;
   flex-direction: column;

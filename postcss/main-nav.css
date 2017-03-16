@@ -6,7 +6,7 @@
 }
 
 .main-nav__list {
-  @mixin reset;
+  @mixin reset-list;
 
   min-height: 255px;
   padding-left: 10px;
