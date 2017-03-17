@@ -1,11 +1,18 @@
 .page-header {
   background-color: $deepBlue;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .page-header__inner {
 
   @media (min-width: $desktop-width) {
     @mixin container;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
 
     display: flex;
     justify-content: space-between;
@@ -29,7 +36,9 @@
 
   @media (min-width: $desktop-width) {
     min-width: auto;
-    padding-top: 28px;
+    padding: 0;
+    align-self: center;
+    border-bottom: none;
     margin: 0;
   }
 }

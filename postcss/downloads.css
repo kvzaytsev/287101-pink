@@ -1,23 +1,20 @@
 .downloads {
   padding-top: 395px;
+  padding-bottom: 32px;
   background-color: $downloads-bkg;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    padding-bottom: 109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 121px;
   }
 }
 
 .downloads__inner {
   @mixin container;
-  min-height: 271px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 618px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 741px;
-  }
 }
 
 .downloads__content {
@@ -37,12 +34,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     box-sizing: border-box;
-
-    padding: 90px 40px 30px 40px;
+    padding: 64px 40px 30px 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 105px 30px 50px 30px;
+    padding: 190px 22px 51px 40px;
   }
 }
 
@@ -54,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    line-height: 1.25;
+    line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,6 +65,12 @@
   line-height: 1.7;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+  }
 }
 
 .downloads__button {
@@ -79,14 +81,35 @@
   font-size: 18px;
   line-height: 1;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 65px;
+  }
+
 }
 
 .downloads__platforms {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
+
 }
 
 .downloads__platform {
   font-size: 0;
+
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 15px;

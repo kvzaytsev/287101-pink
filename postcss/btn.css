@@ -7,7 +7,7 @@
 
   &--round {
     border: 3px solid $white;
-    border-radius: 25px;
+    border-radius: 30px;
   }
 
   &--square {

@@ -1,20 +1,25 @@
 .tariffs {
-  @mixin container;
 
   position: relative;
   padding-top: 90px;
   padding-bottom: 96px;
-  overflow: hidden;
+  background: $grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 87px;
-    padding-bottom: 65px;
+    padding-top: 89px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 140px;
+    padding-top: 144px;
     padding-bottom: 97px;
   }
+}
+
+.tariffs__slider {
+  @mixin container;
+
+  overflow: hidden;
 }
 
 .tariffs-table {
@@ -184,7 +189,6 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  background-color: $tariffs-controls-bkg;
 
   @media (min-width: $tablet-width) {
     display: none;

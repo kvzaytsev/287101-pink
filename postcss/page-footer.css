@@ -21,13 +21,14 @@
   @media (min-width: $desktop-width) {
     height: 175px;
   }
+}
 
-  &--index {
-    display: none;
+.page-footer--index {
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 127px;
   }
 }
 
