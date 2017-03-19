@@ -1,20 +1,26 @@
 .downloads {
+
+  background-color: $downloads-bkg;
+}
+
+.downloads__inner {
+  @mixin container;
+
   padding-top: 395px;
   padding-bottom: 32px;
-  background-color: $downloads-bkg;
 
-  @media (min-width: $tablet-width) {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 109px;
+
+@media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 109px;
+
+    background-position: 50% 100%;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 121px;
   }
-}
-
-.downloads__inner {
-  @mixin container;
 }
 
 .downloads__content {

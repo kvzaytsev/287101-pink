@@ -65,8 +65,8 @@
 }
 
 .page-header__title-wrap {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
-  background-size: cover;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 26%;;
+  background-size: 100% auto;
 }
 
 .page-header__title {
@@ -78,7 +78,7 @@
 
   font-size: 24px;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 29px;
   text-align: center;
   color: $white;
 
@@ -88,8 +88,8 @@
   }
 
   &--form {
-    padding-top: 30px;
-    padding-bottom: 48px;
+     padding-top: 30px;
+     padding-bottom: 53px;
 
     @media (min-width: $tablet-width) {
       padding-top: 70px;
@@ -97,14 +97,14 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 62px;
+      padding-top: 173px;
       padding-bottom: 101px;
     }
   }
 
   &--photo {
     padding-top: 30px;
-    padding-bottom: 80px;
+     padding-bottom: 82px;
 
     @media (min-width: $tablet-width) {
       padding-top: 70px;
@@ -112,7 +112,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 62px 200px 101px 200px;
+      padding: 173px 200px 101px 200px;
     }
   }
 }

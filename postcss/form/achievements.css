@@ -81,7 +81,7 @@ input[type="checkbox"] {
   color: $deepBlue;
 
   @media (min-width: $tablet-width) {
-    padding-left: 58px;
+    padding-left: 60px;
   }
 }
 
@@ -97,4 +97,11 @@ input[type="checkbox"] + label::before {
 
   top: -3px;
   left: 0;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-image: url(../img/icon-yes.svg);
+  background-size: 28px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
 }

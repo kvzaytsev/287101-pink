@@ -147,7 +147,10 @@
 }
 
 .reviews__nav {
-  /*display: none;*/
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .reviews__arrow {

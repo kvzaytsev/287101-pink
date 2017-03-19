@@ -12,6 +12,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  input, textarea, button, input {
+    font-family: "Open Sans", sans-serif;
+  }
+
 }
 
 .trip-form__legend {
@@ -32,23 +37,17 @@
   color: $contacts-red;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 300;
 
   &--contacts {
 
     @media (max-width: $tablet-width) {
       display: none;
     }
-
-    @media (min-width: $tablet-width) {
-      width: auto;
-      padding: 0 25px;
-    }
   }
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 0 25px;
+    padding: 0 30px;
   }
 }
 
@@ -91,6 +90,7 @@
   width: 100%;
   margin-bottom: 36px;
   border-radius: 4px;
+  font-weight: bold;
 
   @media (min-width: $tablet-width) {
     max-width: 300px;
@@ -104,7 +104,6 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
-  font-weight: 300;
 }
 
 .trip-form__clarification-asterisk {

@@ -18,7 +18,6 @@
 .post {
   width: 280px;
   margin-bottom: 20px;
-  outline: 1px solid blue;
   background: $grey;
 
   @media (min-width: $tablet-width) {
@@ -91,7 +90,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 29px 24px 29px;
+    padding: 25px 29px 24px 27px;
   }
 }
 
@@ -129,7 +128,7 @@
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
@@ -161,6 +160,12 @@
   }
 }
 
+.post__likes--of-a-day {
+  @media (min-width: $tablet-width) {
+    width: 120px;
+  }
+}
+
 .post__like-count {
   font-size: 12px;
   line-height: 24px;
@@ -174,14 +179,14 @@
 }
 
 .post__like-btn {
-  border: none;
+
   display: block;
   width: 13px;
   height: 12px;
   font-size: 0;
   fill: $contacts-red;
-  background-image: url(../img/icon-heart.svg);
-
+  background: url(../img/icon-heart.svg);
+  border: none;
   @media (min-width: $tablet-width) {
     margin-left: 17px;
   }

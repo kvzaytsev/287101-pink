@@ -83,6 +83,9 @@
   padding-top: 61px;
   padding-bottom: 308px;
 
+  background:
+    url("../img/iphone-screen-mobile@1x.png") no-repeat 50% calc(100% + 43px);
+
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -93,6 +96,8 @@
     padding-top: 55px;
     padding-bottom: 42px;
 
+    background-position: 10px calc(100% + 43px);
+
     text-align: left;
   }
 
@@ -102,6 +107,7 @@
     justify-content: space-around;
     align-items: stretch;
     padding: 0;
+    background: none;
   }
 }
 

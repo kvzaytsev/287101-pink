@@ -6,19 +6,19 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  font-weight: 300;
+  font-weight: normal;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     padding-top: 45px;
     line-height: 30px;
-    font-weight: 300;
     padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 3px;
+    padding-bottom: 66px;
   }
 
 }
@@ -47,7 +47,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 51px 60px 21px 90px;
+    padding: 54px 60px 18px 90px;
+  }
+
+  button {
+    font-family: "Open Sans", sans-serif;
   }
 }
 
@@ -88,7 +92,7 @@
 
   @media (min-width: $desktop-width) {
     width: 420px;
-    margin-bottom: 91px;
+    margin-bottom: 92px;
     padding-left: 0;
     padding-right: 10px;
   }
@@ -204,8 +208,10 @@
   height: 10px;
 
   background: $white;
-  border: 2px solid $contacts-re;
+  border: 2px solid $contacts-red;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .new-post-form__actions {
@@ -253,6 +259,7 @@
   border-color: $contacts-red;
   color: $contacts-red;
   margin-bottom: 14px;
+  font-weight: bold;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 26px;
@@ -267,6 +274,8 @@
 .new-post-form__reset {
   border-color: $newPostGrey;
   color: $newPostGrey;
+  background: none;
+  font-weight: bold;
 
   @media (min-width: $desktop-width) {
     width: 182px;

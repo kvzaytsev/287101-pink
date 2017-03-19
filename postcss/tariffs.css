@@ -127,6 +127,7 @@
   position: relative;
   padding: 16px 22px 15px 22px;
   border: 2px solid $tariffs-table-border;
+  background: $white;
   box-sizing: border-box;
   text-align: center;
   font-size: 14px;
