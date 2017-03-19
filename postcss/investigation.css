@@ -78,7 +78,7 @@
   margin-top: 16px;
   font-size: 14px;
   line-height: 22px;
-
+  color: $contacts-red;
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;

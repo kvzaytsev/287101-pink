@@ -94,14 +94,12 @@ input[type="checkbox"] + label::before {
 
   border: 2px solid $lightGrey;
   border-radius: 2px;
-
+  background-color: $white;
   top: -3px;
   left: 0;
 }
 
 input[type="checkbox"]:checked + label::before {
-  background-image: url(../img/icon-yes.svg);
   background-size: 28px 16px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: $white url("../img/icon-yes.svg") no-repeat center;
 }

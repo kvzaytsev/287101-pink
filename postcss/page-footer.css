@@ -39,7 +39,11 @@
 }
 
 .page-footer--photo {
-  padding-top: 36px;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 38px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
