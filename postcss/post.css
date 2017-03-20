@@ -16,6 +16,10 @@
 }
 
 .post {
+
+  display: flex;
+  flex-direction: column;
+
   width: 280px;
   margin-bottom: 20px;
   background: $grey;
@@ -88,6 +92,7 @@
 
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     padding: 25px 29px 24px 27px;
@@ -123,8 +128,9 @@
 
 .post__text {
   width: 240px;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+  flex-grow: 1;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
