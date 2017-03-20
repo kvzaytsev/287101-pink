@@ -65,6 +65,8 @@
 }
 
 .post__img-wrap--of-a-day {
+  position: relative;
+
   min-width: 320px;
   padding-left: 0;
   padding-right: 0;
@@ -83,6 +85,17 @@
 
     margin-left: -10px;
   }
+}
+
+.post__img-wrap--of-a-day::before {
+  content: "Панорама дня";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  color: white;
+  background: $contacts-red;
 }
 
 .post__content {

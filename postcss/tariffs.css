@@ -3,7 +3,8 @@
   position: relative;
   padding-top: 90px;
   padding-bottom: 96px;
-  background: $grey;
+  background: grey url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: 100% auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 89px;
