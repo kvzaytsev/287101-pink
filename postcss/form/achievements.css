@@ -9,7 +9,7 @@
     order: 4;
     background: none;
 
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 8px;
     padding-right: 8px;
 
@@ -68,7 +68,7 @@
 }
 
 input[type="checkbox"] {
-  display:none;
+  display: none;
 }
 
 .trip-form__achievement-label {
@@ -94,7 +94,7 @@ input[type="checkbox"] + label::before {
 
   border: 2px solid $lightGrey;
   border-radius: 2px;
-  background-color: $white;
+  background: $white;
   top: -3px;
   left: 0;
 }

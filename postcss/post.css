@@ -95,7 +95,6 @@
 }
 
 .post__content--of-a-day {
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -188,6 +187,7 @@
   fill: $contacts-red;
   background: url(../img/icon-heart.svg);
   border: none;
+
   @media (min-width: $tablet-width) {
     margin-left: 17px;
   }

@@ -11,7 +11,7 @@
 
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 109px;
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 109px;
 
@@ -25,7 +25,7 @@
 
 .downloads__content {
   text-align: center;
-  padding-top:28px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     width: 320px;

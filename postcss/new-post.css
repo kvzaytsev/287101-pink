@@ -59,7 +59,7 @@
   margin-bottom: 40px;
   font-size: 0;
 
-  @media (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     min-width: auto;
     width: 300px;
   }
@@ -120,7 +120,6 @@
 }
 
 .new-post-form__filter-wrap--сontrast {
-
   @media (min-width: $tablet-width) {
     padding-top: 5px;
   }
@@ -153,7 +152,7 @@
   }
 }
 
-.new-post-form__slider  {
+.new-post-form__slider {
   display: none;
   margin: 0 auto 28px auto;
   position: relative;
@@ -171,7 +170,7 @@
   }
 }
 
-.new-post-form__slider--сommon  {
+.new-post-form__slider--сommon {
   display: table;
 
   @media (min-width: $tablet-width) {
@@ -227,7 +226,7 @@
     content: "";
     height: 1px;
     position: absolute;
-    top:0;
+    top: 0;
     display: block;
     width: 100%;
     background-color: $newPostGrey;
@@ -266,7 +265,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 182px;
   }
 }

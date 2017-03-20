@@ -52,7 +52,6 @@
 
 
 .page-footer__logo-wrap {
-
   @media (min-width: $tablet-width) {
     align-self: flex-start;
     margin-bottom: 0;

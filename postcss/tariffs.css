@@ -40,9 +40,6 @@
   }
 }
 
-.tariffs-table__row {
-}
-
 .tariffs-table__header {
 
   padding-top: 17px;
@@ -112,6 +109,7 @@
 .tariffs-table__header:first-child,
 .tariffs-table__feature:first-child {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: table-cell;
     text-align: left;
@@ -141,8 +139,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 8px 15px 9px 15px;
-
     width: 25%;
+
     &::before {
       display: none;
     }
@@ -217,7 +215,7 @@
 }
 
 .tariffs__bullet:last-child::before {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .tariffs__bullet--active::before {

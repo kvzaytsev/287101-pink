@@ -7,11 +7,10 @@
 }
 
 .page-header__inner {
-
   @media (min-width: $desktop-width) {
     @mixin container;
     position: absolute;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
 
     display: flex;
@@ -65,7 +64,7 @@
 }
 
 .page-header__title-wrap {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 26%;;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 26%;
   background-size: 100% auto;
 }
 

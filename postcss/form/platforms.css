@@ -33,7 +33,6 @@
 }
 
 .trip-form__platforms {
-
   @media (max-width: $mobile-width) {
     @mixin container;
     @mixin reset-fieldset;
@@ -83,7 +82,7 @@
 }
 
 input[type="radio"] {
-  display:none;
+  display: none;
 }
 
 input[type="radio"] + label::before {

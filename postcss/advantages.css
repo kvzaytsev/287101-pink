@@ -83,8 +83,7 @@
   padding-top: 61px;
   padding-bottom: 308px;
 
-  background:
-    url("../img/iphone-screen-mobile@1x.png") no-repeat 50% calc(100% + 43px);
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% calc(100% + 43px);
 
   text-align: center;
 
@@ -131,7 +130,7 @@
 
 .advantage:last-child {
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,8 +147,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
-    line-height:32px;
-
+    line-height: 32px;
     margin-bottom: 22px;
   }
 }

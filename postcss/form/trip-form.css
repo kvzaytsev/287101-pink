@@ -13,7 +13,10 @@
     justify-content: space-between;
   }
 
-  input, textarea, button, input {
+  input,
+  textarea,
+  button,
+  input {
     font-family: "Open Sans", sans-serif;
   }
 
@@ -39,7 +42,6 @@
   line-height: 18px;
 
   &--contacts {
-
     @media (max-width: $mobile-width) {
       display: none;
     }
