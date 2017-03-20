@@ -68,7 +68,7 @@
   margin-left: -20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 700px;
+    min-width: 660px;
     min-height: 510px;
     margin-left: -40px;
   }
@@ -171,9 +171,10 @@
   line-height: 24px;
   color: $contacts-red;
   text-transform: uppercase;
+  margin-left: 20px;
 
-  @media (max-width: $tablet-width) {
-    margin-left: 20px;
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 
 }

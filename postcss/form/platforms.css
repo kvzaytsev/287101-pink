@@ -34,9 +34,9 @@
 
 .trip-form__platforms {
 
-  @media (max-width: $tablet-width) {
-    @mixin reset-fieldset;
+  @media (max-width: $mobile-width) {
     @mixin container;
+    @mixin reset-fieldset;
   }
 
 }
@@ -111,4 +111,3 @@ input[type="radio"] + label::before {
 input[type="radio"]:checked + label::before {
   background: $contacts-red;
 }
-
