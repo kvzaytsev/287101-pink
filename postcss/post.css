@@ -174,13 +174,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 240px;
-  }
-}
-
-.post__likes--of-a-day {
-  @media (min-width: $tablet-width) {
-    width: 120px;
   }
 }
 
