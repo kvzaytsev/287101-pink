@@ -16,9 +16,12 @@
 }
 
 .post {
+
+  display: flex;
+  flex-direction: column;
+
   width: 280px;
   margin-bottom: 20px;
-  outline: 1px solid blue;
   background: $grey;
 
   @media (min-width: $tablet-width) {
@@ -62,6 +65,8 @@
 }
 
 .post__img-wrap--of-a-day {
+  position: relative;
+
   min-width: 320px;
   padding-left: 0;
   padding-right: 0;
@@ -69,7 +74,7 @@
   margin-left: -20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 700px;
+    min-width: 660px;
     min-height: 510px;
     margin-left: -40px;
   }
@@ -82,6 +87,17 @@
   }
 }
 
+.post__img-wrap--of-a-day::before {
+  content: "Панорама дня";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  color: white;
+  background: $contacts-red;
+}
+
 .post__content {
   padding-left: 17px;
   padding-top: 20px;
@@ -89,14 +105,14 @@
 
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 29px 24px 29px;
+    padding: 25px 29px 24px 27px;
   }
 }
 
 .post__content--of-a-day {
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -125,11 +141,12 @@
 
 .post__text {
   width: 240px;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+  flex-grow: 1;
+
   font-size: 14px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
@@ -161,26 +178,34 @@
   }
 }
 
+.post__likes--of-a-day {
+  @media (min-width: $tablet-width) {
+    width: 120px;
+  }
+}
+
 .post__like-count {
   font-size: 12px;
   line-height: 24px;
   color: $contacts-red;
   text-transform: uppercase;
+  margin-left: 20px;
 
-  @media (max-width: $tablet-width) {
-    margin-left: 20px;
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 
 }
 
 .post__like-btn {
-  border: none;
+
   display: block;
   width: 13px;
   height: 12px;
   font-size: 0;
   fill: $contacts-red;
-  background-image: url(../img/icon-heart.svg);
+  background: url(../img/icon-heart.svg);
+  border: none;
 
   @media (min-width: $tablet-width) {
     margin-left: 17px;

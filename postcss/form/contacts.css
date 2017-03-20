@@ -21,7 +21,7 @@
 }
 
 .trip-form__contacts {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     @mixin reset-fieldset;
     @mixin container;
   }
@@ -82,11 +82,18 @@
   margin-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase;
+  color: $contacts-red;
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;
     margin-top: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+  }
+}
+
+.trip-form__contacts-label-aux {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -94,7 +101,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 16px 21px 13px 21px;
+  padding: 15px 20px 14px 20px;
 
   font-size: 18px;
   line-height: 30px;

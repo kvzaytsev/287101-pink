@@ -9,7 +9,7 @@
     order: 4;
     background: none;
 
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 8px;
     padding-right: 8px;
 
@@ -20,7 +20,7 @@
 }
 
 .trip-form__achievements {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     @mixin reset-fieldset;
     @mixin container;
   }
@@ -68,7 +68,7 @@
 }
 
 input[type="checkbox"] {
-  display:none;
+  display: none;
 }
 
 .trip-form__achievement-label {
@@ -81,7 +81,7 @@ input[type="checkbox"] {
   color: $deepBlue;
 
   @media (min-width: $tablet-width) {
-    padding-left: 58px;
+    padding-left: 60px;
   }
 }
 
@@ -94,7 +94,12 @@ input[type="checkbox"] + label::before {
 
   border: 2px solid $lightGrey;
   border-radius: 2px;
-
+  background: $white;
   top: -3px;
   left: 0;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-size: 28px 16px;
+  background: $white url("../img/icon-yes.svg") no-repeat center;
 }

@@ -1,16 +1,11 @@
-.trip {
-
-}
-
 .trip__condition-wrap {
   @mixin container;
 
-  padding-top: 47px;
+  padding-top: 45px;
   margin-bottom: 35px;
 
   font-size: 14px;
   line-height: 30px;
-  font-weight: 300;
   text-align: center;
 
   @media (min-width: $tablet-width) {

@@ -10,16 +10,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 72px;
+    padding-top: 69px;
   }
 }
 
 .advantages__inner {
-  @mixin container;
+  background: $grey;
 }
 
 .advantages__slogan {
-  margin: 0;
+  @mixin container;
 
   font-size: 24px;
   line-height: 30px;
@@ -27,14 +27,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 16px;
 
     font-size: 40px;
     line-height: 1.175;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 48px;
 
     font-size: 50px;
     line-height: 1.14;
@@ -54,6 +54,7 @@
   &--top {
     @media (min-width: $tablet-width) {
       width: 600px;
+      margin-bottom: 1px;
     }
 
     @media (min-width: $desktop-width) {
@@ -63,6 +64,8 @@
   }
 
   &--bottom {
+    margin-bottom: 30px;
+
     @media (min-width: $tablet-width) {
       width: 345px;
     }
@@ -75,9 +78,12 @@
 
 .advantages__list {
   @mixin reset-list;
+  @mixin container;
 
-  padding-top: 65px;
+  padding-top: 61px;
   padding-bottom: 308px;
+
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% calc(100% + 43px);
 
   text-align: center;
 
@@ -86,8 +92,10 @@
     flex-direction: column;
     align-items: flex-end;
 
-    padding-top: 60px;
-    padding-bottom: 0px;
+    padding-top: 55px;
+    padding-bottom: 42px;
+
+    background-position: 10px calc(100% + 43px);
 
     text-align: left;
   }
@@ -98,6 +106,7 @@
     justify-content: space-around;
     align-items: stretch;
     padding: 0;
+    background: none;
   }
 }
 
@@ -106,20 +115,22 @@
   margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
-    margin-bottom: 19px;
+    width: 310px;
+    margin-bottom: 12px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     width: 240px;
-    padding-top: 358px;
+    padding-top: 355px;
     text-align: center;
+    padding-right: 0;
   }
 }
 
 .advantage:last-child {
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -136,8 +147,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
-    line-height: 1.1;
-
+    line-height: 32px;
     margin-bottom: 22px;
   }
 }
@@ -146,11 +156,15 @@
   margin: 0;
   font-size: 14px;
   line-height: 24px;
-  padding: 0px 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    line-height: 1.66;
+    line-height: 30px;
     padding: 0;
   }
 }

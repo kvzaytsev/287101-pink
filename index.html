@@ -95,12 +95,13 @@
     </section>
 
     <section class="advantages">
+
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages__slogan">
+        <p class="advantages__attraction advantages__attraction--top">Устали от серости мегаполиса?</p>
+        <p class="advantages__attraction advantages__attraction--bottom">Нам есть, что вам предложить!</p>
+      </div>
       <div class="advantages__inner">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <div class="advantages__slogan">
-          <p class="advantages__attraction advantages__attraction--top">Устали от серости мегаполиса?</p>
-          <p class="advantages__attraction advantages__attraction--bottom">Нам есть, что вам предложить!</p>
-        </div>
         <ul class="advantages__list">
           <li class="advantage">
             <h3 class="advantage__header">Поднимает настроение</h3>
@@ -122,7 +123,10 @@
 
     <section class="investigation">
       <div class="investigation__inner">
-        <h3 class="investigation__header">Эффект на 24 часа!</h3>
+        <h3 class="investigation__header">
+          <span class="investigation__header-part">Эффект</span>
+          <span class="investigation__header-part">на 24 часа!</span>
+        </h3>
         <p class="investigation__text">
           Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
         </p>
@@ -142,8 +146,12 @@
           <p class="reviews__author-name">Николай Петров</p>
           <p class="reviews__author-aux">25 лет, водитель трамвая</p>
           <p class="reviews__text">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            <span class="reviews__text-part reviews__text-part--quote">«</span>
+            <span class="reviews__text-part">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </span>
+            <span class="reviews__text-part reviews__text-part--quote">»</span>
           </p>
         </div>
       </div>
@@ -248,7 +256,7 @@
           <a href="tel:+78125556666" class="contacts__value">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item contacts__item--email">
-          <h3 class="contacts__type">Пишите:</h3>
+          <h3 class="contacts__type contacts__type--email">Пишите:</h3>
           <a href="mailto:mail@htmlacademy.ru" class="contacts__value">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item contacts__item--address">
@@ -257,21 +265,22 @@
         </li>
       </ul>
 
-      <div class="map">
-        <img
-          src="img/bg-map-mobile@1x.png"
-          width="320"
-          height="200"
-          alt="Map"
-        >
-      </div>
+    </section>
 
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989925305714!2d30.32157972497938!3d59.93879603747127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1479149284956"
+        height="100%"
+        width="100%"
+        frameborder="0"
+        style="border:0"
+      ></iframe>
     </section>
 
   </main>
   <footer class="page-footer page-footer--index">
 
-    <div class="page-footer__logo-wrap">
+    <div class="page-footer__logo-wrap page-footer__logo-wrap--index">
       <a class="page-footer__logo" href="index.html">
         <img
           src="img/logo-pink-blue-mobile.svg"
@@ -282,19 +291,19 @@
       </a>
     </div>
 
-    <div class="page-footer__socials-group">
+    <div class="page-footer__socials-group page-footer__socials-group--index">
       <a class="page-footer__social page-footer__social--tweeter" href="#">Twitter</a>
       <a class="page-footer__social page-footer__social--facebook" href="#">Facebook</a>
       <a class="page-footer__social page-footer__social--youtube" href="#">Youtube</a>
     </div>
 
-    <div class="page-footer__copyright">
+    <div class="page-footer__copyright page-footer__copyright--index">
       <span class="page-footer__copyright-text">Разработано</span>
       <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/">
         <img
           src="img/logo-htmlacademy.svg"
-          width="30"
-          height="35"
+          width="27"
+          height="34"
           alt="HTML Academy"
         >
       </a>

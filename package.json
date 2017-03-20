@@ -11,10 +11,12 @@
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.3.0",
     "pixel-glass": "^1.0.13",
-    "precss": "1.4.0"
+    "precss": "1.4.0",
+    "stylelint": "^7.9.0"
   },
   "scripts": {
     "test": "editorconfig-cli",
+    "style-test": "stylelint postcss/**/*.css",
     "build": "gulp style",
     "start": "gulp serve"
   },

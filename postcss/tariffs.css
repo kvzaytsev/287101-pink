@@ -1,20 +1,26 @@
 .tariffs {
-  @mixin container;
 
   position: relative;
   padding-top: 90px;
   padding-bottom: 96px;
-  overflow: hidden;
+  background: grey url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: 100% auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 87px;
-    padding-bottom: 65px;
+    padding-top: 89px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 140px;
+    padding-top: 144px;
     padding-bottom: 97px;
   }
+}
+
+.tariffs__slider {
+  @mixin container;
+
+  overflow: hidden;
 }
 
 .tariffs-table {
@@ -33,9 +39,6 @@
   @media (min-width: $desktop-width) {
     width: 940px;
   }
-}
-
-.tariffs-table__row {
 }
 
 .tariffs-table__header {
@@ -107,6 +110,7 @@
 .tariffs-table__header:first-child,
 .tariffs-table__feature:first-child {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: table-cell;
     text-align: left;
@@ -122,6 +126,7 @@
   position: relative;
   padding: 16px 22px 15px 22px;
   border: 2px solid $tariffs-table-border;
+  background: $white;
   box-sizing: border-box;
   text-align: center;
   font-size: 14px;
@@ -135,8 +140,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 8px 15px 9px 15px;
-
     width: 25%;
+
     &::before {
       display: none;
     }
@@ -184,7 +189,6 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  background-color: $tariffs-controls-bkg;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -212,7 +216,7 @@
 }
 
 .tariffs__bullet:last-child::before {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .tariffs__bullet--active::before {

@@ -1,6 +1,6 @@
 .trip-form__emotions-wrap {
   order: 5;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     @mixin container;
@@ -17,8 +17,7 @@
 }
 
 .trip-form__emotions {
-
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     @mixin reset-fieldset;
     @mixin container;
   }
@@ -30,9 +29,8 @@
 }
 
 .trip-form__emotions-text {
-  min-width: 275px;
-  padding: 0;
-  min-height: 197px;
+  min-width: 280px;
+  min-height: 202px;
   margin-top: 15px;
   margin-left: 20px;
 
@@ -40,18 +38,22 @@
   border: 2px solid $lightGrey;
 
   resize: none;
+  line-height: 30px;
+  font-size: 18px;
+  padding: 15px 18px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    min-width: 495px;
-    min-height: 190px;
+    min-width: 500px;
+    min-height: 193px;
     margin-top: 32px;
     margin-bottom: 36px;
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 125px;
-    min-width: 815px;
+    min-height: 128px;
+    min-width: 820px;
     margin-top: 29px;
     margin-bottom: 28px;
   }
