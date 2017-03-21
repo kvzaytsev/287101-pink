@@ -5,6 +5,10 @@
   padding-top: 0;
   padding-bottom: 36px;
 
+  background-image: url("../../img/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 5px;
+
   @media (min-width: $tablet-width) {
     padding-top: 30px;
     padding-bottom: 13px;

@@ -51,12 +51,20 @@
 
   color: $contacts-red;
 
+  background-size: 200px, 240px;
+  background-image: url("../../img/icon-editor-diagram-fill.svg"), url("../../img/icon-timer.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 30px 78px, 10px 22px;
+
   @media (min-width: $desktop-width) {
     padding-left: 89px;
     padding-top: 129px;
 
     font-size: 120px;
     line-height: 140px;
+
+    background-size: 253px, 300px;
+    background-position: 32px 79px, 10px 9px;
   }
 }
 
