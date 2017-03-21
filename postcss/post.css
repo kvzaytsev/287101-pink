@@ -65,7 +65,6 @@
 }
 
 .post__img-wrap--of-a-day {
-  position: relative;
 
   min-width: 320px;
   padding-left: 0;
@@ -83,7 +82,7 @@
     min-width: 960px;
     min-height: 505px;
 
-    margin-left: -10px;
+    margin-left: -130px;
   }
 }
 
@@ -93,9 +92,21 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 10px 15px;
+  padding: 9px 20px;
   color: white;
   background: $contacts-red;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+  }
 }
 
 .post__content {
