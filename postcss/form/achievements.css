@@ -20,6 +20,7 @@
 }
 
 .trip-form__achievements {
+
   @media (max-width: $mobile-width) {
     @mixin reset-fieldset;
     @mixin container;

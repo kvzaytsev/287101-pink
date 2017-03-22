@@ -16,7 +16,9 @@
 }
 
 .advantages__inner {
-  background: $grey;
+  background: $grey url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: calc(100% + 5px) auto;
+  background-position-x: -5px;
 }
 
 .advantages__slogan {

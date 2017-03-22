@@ -104,11 +104,13 @@
   align-items: center;
   margin-bottom: 17px;
 
-  border-bottom: 1px solid $newPostGrey;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 8px;
     padding-bottom: 24px;
+
+    border-bottom: 1px solid $newPostGrey;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,12 +136,33 @@
 
   display: block;
   padding: 0;
+
   width: 45px;
   height: 45px;
+
   border: none;
   box-sizing: border-box;
-
+  background: none;
   font-size: 0;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+
+    cursor: default;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.new-post-form__filter--crop svg {
+  width: 45px;
+  height: 45px;
 
   @media (min-width: $tablet-width) {
     width: 23px;
@@ -149,6 +172,39 @@
   @media (min-width: $desktop-width) {
     width: 45px;
     height: 45px;
+  }
+}
+
+
+.new-post-form__filter--active svg {
+  fill: $contacts-red;
+}
+
+.new-post-form__filter svg {
+
+
+  @media (min-width: $tablet-width) {
+    fill: $contacts-red;
+  }
+}
+
+.new-post-form__filter--fill svg {
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.new-post-form__filter--сontrast svg {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
   }
 }
 
