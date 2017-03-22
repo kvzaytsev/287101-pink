@@ -22,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+    padding: 30px 0;
   }
 }
 
@@ -45,9 +46,32 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 0;
+    padding: 10px 0;
 
     font-weight: normal;
     text-transform: none;
   }
+}
+
+.main-nav__link--active .main-nav__link {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 2px 0 0 $white;
+  }
+}
+
+.main-nav__link--active:hover .main-nav__link {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 2px 0 0 $contacts-red;
+  }
+}
+
+.main-nav__link:hover {
+  color: $contacts-red;
+}
+
+.main-nav__link[href]:active {
+  @media (min-width: $desktop-width) {
+    color: $ white;
+  }
+  opacity: 0.3;
 }

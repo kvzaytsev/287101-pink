@@ -137,8 +137,8 @@
   display: block;
   padding: 0;
 
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
 
   border: none;
   box-sizing: border-box;
@@ -148,30 +148,30 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 23px;
+    width: 22px;
+    height: 22px;
 
     cursor: default;
   }
 
   @media (min-width: $desktop-width) {
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
   }
 }
 
 .new-post-form__filter--crop svg {
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
 
   @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 23px;
+    width: 22px;
+    height: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -196,6 +196,11 @@
     width: 24px;
     height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .new-post-form__filter--сontrast svg {
@@ -205,6 +210,11 @@
   @media (min-width: $tablet-width) {
     width: 16px;
     height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
   }
 }
 
