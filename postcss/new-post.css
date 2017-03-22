@@ -104,8 +104,6 @@
   align-items: center;
   margin-bottom: 17px;
 
-
-
   @media (min-width: $tablet-width) {
     padding-top: 8px;
     padding-bottom: 24px;
@@ -147,11 +145,23 @@
 
   cursor: pointer;
 
+  fill: $deepBlue;
+  opacity: .3;
+
+  &:hover {
+    opacity: .5;
+  }
+
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 22px;
 
     cursor: default;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -176,8 +186,13 @@
 }
 
 
-.new-post-form__filter--active svg {
+.new-post-form__filter--active {
   fill: $contacts-red;
+  opacity: 1;
+
+  &:hover {
+     opacity: 1;
+   }
 }
 
 .new-post-form__filter svg {
@@ -279,6 +294,10 @@
   cursor: pointer;
 }
 
+.new-post-form__slider-handle:active {
+  background: $contacts-red;
+}
+
 .new-post-form__actions {
   position: relative;
   width: auto;
@@ -321,6 +340,7 @@
 }
 
 .new-post-form__submit {
+  background: none;
   border-color: $contacts-red;
   color: $contacts-red;
   margin-bottom: 14px;
@@ -336,9 +356,18 @@
   }
 }
 
+.new-post-form__submit:hover {
+  background-color: $contacts-red;
+  color: $white;
+}
+
+.new-post-form__submit:active {
+  color: rgba(255,255,255,.3);
+}
+
 .new-post-form__reset {
-  border-color: $newPostGrey;
-  color: $newPostGrey;
+  border-color: $new-post-reset;
+  color: $new-post-reset;
   background: none;
   font-weight: bold;
 
@@ -347,6 +376,15 @@
   }
 }
 
+.new-post-form__reset:hover {
+  border-color: $new-post-reset-hvr;
+  color: $new-post-reset-hvr;
+}
+
+.new-post-form__reset:active {
+  background-color: $new-post-reset-hvr;
+  color: rgba(255,255,255,.3);
+}
 
 .new-post-form__slider-handle--crop {
   left: 147px;

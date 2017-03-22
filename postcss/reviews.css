@@ -161,29 +161,32 @@
 
 .reviews__arrow {
   position: absolute;
+  padding: 0;
   display: block;
+  border: none;
   top: 151px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #283645;
+  width: 22px;
+  height: 42px;
   background: none;
   font-size: 0;
-  opacity: 0.3;
-  transform-origin: center;
-  transform: rotate(45deg);
   cursor: pointer;
   z-index: 3;
+
+  fill: $deep-blue-01;
+
+  &:hover {
+    fill: $deep-blue-06;
+  }
+
+  &:active {
+    fill: $deep-blue-03;
+  }
 }
 
-
 .reviews__arrow--prev {
-  border-top: none;
-  border-right: none;
   left: 17px;
 }
 
 .reviews__arrow--next {
-  border-bottom: none;
-  border-left: none;
   right: 17px;
 }
