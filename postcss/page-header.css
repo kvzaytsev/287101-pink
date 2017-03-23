@@ -1,32 +1,36 @@
 .page-header {
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
-
-  background-size: 700px 462px;
   background: $downloads-bkg url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 257px;
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: $downloads-bkg  url(../img/bg-back-mobile@2x.jpg) no-repeat;
-  }
+  background-size: 700px 462px;
 
   @media (min-width: $tablet-width) {
-    background-size: 1200px 729px;
     background: $downloads-bkg url(../img/bg-back-tablet@1x.jpg) no-repeat 50% 255px;
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: $downloads-bkg url(../img/bg-back-tablet@2x.jpg) no-repeat;
-    }
+    background-size: 1200px 729px;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 2560px 853px;
     background: $downloads-bkg url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 0;
+    background-size: 2560px 853px;
+  }
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: $downloads-bkg url(../img/bg-back-desktop@2x.jpg) no-repeat;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: $downloads-bkg  url(../img/bg-back-mobile@2x.jpg) no-repeat 50% 257px;
+    background-size: 700px 462px;
+
+    @media (min-width: $tablet-width) {
+      background: $downloads-bkg url(../img/bg-back-tablet@2x.jpg) no-repeat 50% 255px;
+      background-size: 1200px 729px;
     }
+
+    @media (min-width: $desktop-width) {
+      background: $downloads-bkg url(../img/bg-back-desktop@2x.jpg) no-repeat 50% 0;
+      background-size: 2560px 853px;
+    }
+  }
+}
+
+.page-header__top {
+  @media (min-width: $desktop-width) {
+    background: rgba(0,0,0,.2);
   }
 }
 
@@ -34,11 +38,11 @@
   background-color: $deepBlue;
 
   @media (min-width: $desktop-width) {
+    @mixin container;
+    background: none;
 
     display: flex;
     justify-content: space-between;
-
-    background: rgba(0,0,0,.2);
   }
 }
 
@@ -56,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: auto;
+
     padding: 27px 9px 10px;
     align-self: flex-start;
     border-bottom: none;
