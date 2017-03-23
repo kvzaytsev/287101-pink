@@ -191,8 +191,8 @@
   opacity: 1;
 
   &:hover {
-     opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .new-post-form__filter svg {
