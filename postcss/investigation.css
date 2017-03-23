@@ -116,6 +116,14 @@
   line-height: 22px;
   color: $contacts-red;
 
+  &:hover {
+    color: $deepBlue;
+  }
+
+  &:active {
+    color: $deep-blue-03;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;

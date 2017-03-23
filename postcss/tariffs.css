@@ -125,7 +125,7 @@
 
 .tariffs-table__feature {
   position: relative;
-  padding: 16px 22px 15px 22px;
+  padding: 16px 18px 15px 22px;
   border: 2px solid $tariffs-table-border;
   background: $white;
   box-sizing: border-box;
