@@ -199,9 +199,18 @@
 .tariffs__bullet {
   padding: 0;
   border: none;
+  margin-right: 15px;
   background: none;
   font-size: 0;
   box-sizing: border-box;
+
+  &:hover::before {
+    background: $deep-blue-06;
+  }
+
+  &:active::before {
+    background: $deep-blue-01;
+  }
 }
 
 .tariffs__bullet::before {
@@ -212,11 +221,10 @@
   height: 6px;
   background: #bac1c7;
   border-radius: 50%;
-  margin-right: 15px;
   cursor: pointer;
 }
 
-.tariffs__bullet:last-child::before {
+.tariffs__bullet:last-child {
   margin-right: 0;
 }
 
@@ -224,4 +232,8 @@
   background: none;
   box-shadow: 0 0 0 3px $black;
   cursor: auto;
+}
+
+.tariffs__bullet--active:hover::before {
+  background: none;
 }

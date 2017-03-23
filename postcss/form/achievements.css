@@ -101,5 +101,15 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
   background-size: 28px 16px;
-  background: $white url("../img/icon-yes.svg") no-repeat center;
+  background: $white url("../img/icon-editor-check.svg") no-repeat center;
+}
+
+input[type="checkbox"] + label:hover {
+  &::before {
+    border: 2px solid $deepBlue;
+  }
+}
+
+input[type="checkbox"]:active  + label::before{
+  border: 2px solid $contacts-red;
 }

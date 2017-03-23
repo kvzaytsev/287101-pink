@@ -127,6 +127,15 @@
   background: none;
   font-size: 0;
   box-sizing: border-box;
+  margin-right: 20px;
+
+  &:hover::before {
+    background: $deep-blue-06;
+  }
+
+  &:active::before {
+    background: $deep-blue-01;
+  }
 }
 
 .reviews__bullet::before {
@@ -135,13 +144,12 @@
   vertical-align: middle;
   width: 6px;
   height: 6px;
-  background: #bac1c7;
+  background: $deep-blue-03;
   border-radius: 50%;
-  margin-right: 20px;
   cursor: pointer;
 }
 
-.reviews__bullet:last-child::before {
+.reviews__bullet:last-child {
   margin-right: 0;
 }
 
@@ -149,6 +157,10 @@
   background: none;
   box-shadow: 0 0 0 3px $black;
   cursor: auto;
+}
+
+.reviews__bullet--active:hover::before {
+  background: none;
 }
 
 .reviews__nav {

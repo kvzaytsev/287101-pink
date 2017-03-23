@@ -105,31 +105,33 @@
   }
 }
 
-.page-header__toggle {
+.page-header__toggle-wrap {
   padding: 0;
   border: none;
   background-color: transparent;
   font-size: 0;
   align-self: flex-end;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
-
-  &--close::before {
-    content: "";
-    display: block;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    width: 24px;
-    height: 24px;
-  }
 }
 
-.page-header__title-wrap {
+.page-header__toggle {
+  fill: $white;
 
+  &:hover {
+    fill: $contacts-red;
+  }
 
+  &:active {
+    fill: $red-03;
+  }
+
+  &--burger {
+    display: none;
+  }
 }
 
 .page-header__title {
