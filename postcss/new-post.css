@@ -1,3 +1,7 @@
+.new-post {
+  margin-bottom: 5px;
+}
+
 .new-post__header {
   @mixin container;
 
@@ -48,6 +52,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 54px 60px 18px 90px;
+    margin-bottom: 40px;
   }
 
   button {

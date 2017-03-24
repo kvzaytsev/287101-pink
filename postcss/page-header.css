@@ -50,13 +50,13 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 21px 20px 25px 20px;
+  padding: 21px 20px 21px 20px;
   border-bottom: 1px solid $black;
 
   @media (min-width: $tablet-width) {
 
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,7 +69,27 @@
 }
 
 .page-header__logo {
+  width: 75px;
+  height: 22px;
+
   fill: $white;
+
+  &:hover {
+    fill: $contacts-red;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: .3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.page-header__logo-icon {
 
   &--mobile {
     display: block;
@@ -98,15 +118,6 @@
       display: block;
     }
   }
-
-  &:hover {
-    fill: $contacts-red;
-  }
-
-  &:active {
-    fill: $white;
-    opacity: .3;
-  }
 }
 
 .page-header__toggle-wrap {
@@ -116,13 +127,6 @@
   font-size: 0;
   align-self: flex-end;
   cursor: pointer;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.page-header__toggle {
   fill: $white;
 
   &:hover {
@@ -132,6 +136,18 @@
   &:active {
     fill: $red-03;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__toggle {
+  width: 24px;
+  height: 24px;
+}
+
+.page-header__toggle-icon {
 
   &--burger {
     display: none;
