@@ -195,14 +195,14 @@
   }
 }
 
-.new-post-form__filter svg {
+.new-post-form__filter-icon {
 
   @media (min-width: $tablet-width) {
     fill: $contacts-red;
   }
 }
 
-.new-post-form__filter--fill svg {
+.new-post-form__filter-icon--fill {
   width: 48px;
   height: 48px;
 
@@ -217,7 +217,7 @@
   }
 }
 
-.new-post-form__filter--сontrast svg {
+.new-post-form__filter-icon--сontrast {
   width: 32px;
   height: 32px;
 

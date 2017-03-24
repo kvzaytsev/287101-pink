@@ -41,13 +41,13 @@
 
         <div class="page-header__panel">
           <a class="page-header__logo-wrap" href="index.html">
-            <svg class="page-header__logo page-header__logo--mobile" width="75" height="22">
+            <svg class="page-header__logo page-header__logo--mobile" width="75" height="22" role="img" aria-label="Пинк">
               <use xlink:href="img/sprite.svg#pink-white-mobile" width="75" height="22"></use>
             </svg>
-            <svg class="page-header__logo page-header__logo--tablet" width="150" height="40">
+            <svg class="page-header__logo page-header__logo--tablet" width="150" height="40" role="img" aria-label="Пинк">
               <use xlink:href="img/sprite.svg#pink-white-tablet" width="150" height="40"></use>
             </svg>
-            <svg class="page-header__logo page-header__logo--desktop" width="150" height="40">
+            <svg class="page-header__logo page-header__logo--desktop" width="150" height="40" role="img" aria-label="Пинк">
               <use xlink:href="img/sprite.svg#pink-white-desktop" width="150" height="40"></use>
             </svg>
           </a>
@@ -90,7 +90,7 @@
 
   </header>
 
-  <main class="photo-page-content">
+  <main class="page-content page-content--photo">
 
     <section class="post-wall">
 
@@ -304,7 +304,7 @@
 
               <div class="new-post-form__filter-wrap new-post-form__filter-wrap--crop">
                 <button class="new-post-form__filter new-post-form__filter--crop new-post-form__filter--active" type="button">
-                  <svg class="" width="45" height="45">
+                  <svg class="new-post-form__filter-icon new-post-form__filter-icon--crop" width="45" height="45">
                     <use xlink:href="img/sprite.svg#editor-crop"></use>
                   </svg>
                   Обрезать
@@ -318,7 +318,7 @@
 
               <div class="new-post-form__filter-wrap new-post-form__filter-wrap--fill">
                 <button class="new-post-form__filter new-post-form__filter--fill" type="button">
-                  <svg class="" width="45" height="45">
+                  <svg class="new-post-form__filter-icon new-post-form__filter-icon--fill" width="45" height="45">
                     <use xlink:href="img/sprite.svg#editor-fill"></use>
                   </svg>
                   Заливка
@@ -332,7 +332,7 @@
 
               <div class="new-post-form__filter-wrap new-post-form__filter-wrap--сontrast">
                 <button class="new-post-form__filter new-post-form__filter--сontrast" type="button">
-                  <svg class="" width="45" height="45">
+                  <svg class="new-post-form__filter-icon new-post-form__filter-icon--сontrast" width="45" height="45">
                     <use xlink:href="img/sprite.svg#editor-contrast"></use>
                   </svg>
                   Контрастность
@@ -368,29 +368,27 @@
 
   </main>
 
-  <footer class="page-footer page-footer--photo">
+  <footer class="page-footer">
 
-    <div class="page-footer__logo-wrap page-footer__logo-wrap--photo">
-      <a class="page-footer__logo-wrap" href="index.html">
-        <svg class="page-footer__logo page-footer__logo--mobile" width="150" height="40">
-          <use xlink:href="img/sprite.svg#pink-blue-mobile" width="150" height="40"></use>
-        </svg>
-        <svg class="page-footer__logo page-footer__logo--desktop" width="150" height="40">
-          <use xlink:href="img/sprite.svg#pink-blue-desktop" width="150" height="40"></use>
-        </svg>
-      </a>
-    </div>
+    <a class="page-footer__logo-wrap" href="index.html">
+      <svg class="page-footer__logo page-footer__logo--mobile" width="150" height="40" role="img" aria-label="Пинк">
+        <use xlink:href="img/sprite.svg#pink-blue-mobile" width="150" height="40"></use>
+      </svg>
+      <svg class="page-footer__logo page-footer__logo--desktop" width="150" height="40" role="img" aria-label="Пинк">
+        <use xlink:href="img/sprite.svg#pink-blue-desktop" width="150" height="40"></use>
+      </svg>
+    </a>
 
-    <div class="page-footer__socials-group page-footer__socials-group--photo">
+    <div class="page-footer__socials-group">
       <a class="page-footer__social page-footer__social--tweeter" href="#">Twitter</a>
       <a class="page-footer__social page-footer__social--facebook" href="#">Facebook</a>
       <a class="page-footer__social page-footer__social--youtube" href="#">Youtube</a>
     </div>
 
-    <div class="page-footer__copyright page-footer__copyright--photo">
+    <div class="page-footer__copyright">
       <span class="page-footer__copyright-text">Разработано</span>
       <a class="page-footer__copyright-logo-wrap" href="https://htmlacademy.ru/">
-        <svg width="27" height="34" class="page-footer__copyright-logo">
+        <svg width="27" height="34" class="page-footer__copyright-logo" role="img" aria-label="HTML Academy">
           <use xlink:href="img/sprite.svg#html-academy"></use>
         </svg>
       </a>
