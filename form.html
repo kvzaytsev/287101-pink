@@ -36,32 +36,46 @@
 <body class="outlines-on">
 
   <header class="page-header">
-    <div class="page-header__inner">
 
-      <div class="page-header__panel">
-        <a class="page-header__logo">
-          <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
-        </a>
-        <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+    <div class="page-header__top">
+      <div class="page-header__inner">
+
+        <div class="page-header__panel">
+
+          <a class="page-header__logo-wrap" href="index.html">
+            <svg class="page-header__logo" width="75" height="22" role="img" aria-label="Пинк">
+              <use class="page-header__logo-icon page-header__logo-icon--mobile" xlink:href="img/sprite.svg#pink-white-mobile"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--tablet" xlink:href="img/sprite.svg#pink-white-tablet"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--desktop" xlink:href="img/sprite.svg#pink-white-desktop"></use>
+            </svg>
+          </a>
+
+          <button class="page-header__toggle-wrap" type="button">
+            <svg width="24" height="24" >
+              <use class="page-header__toggle page-header__toggle--cross" xlink:href="img/sprite.svg#menu-cross"></use>
+              <use class="page-header__toggle page-header__toggle--burger" xlink:href="img/sprite.svg#menu-burger"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="main-nav main-nav--open">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item main-nav__link--active">
+              <a class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
-
-      <nav class="main-nav main-nav--open">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-
     </div>
 
     <div class="page-header__title-wrap">
@@ -72,7 +86,7 @@
 
   </header>
 
-  <main class="form-page-content">
+  <main class="page-content page-content--form">
 
     <section class="trip">
 
@@ -299,34 +313,27 @@
 
   </main>
 
-  <footer class="page-footer page-footer--form">
+  <footer class="page-footer">
 
-    <div class="page-footer__logo-wrap">
-      <a class="page-footer__logo" href="index.html">
-        <img
-          src="img/logo-pink-blue-mobile.svg"
-          width="148"
-          height="42"
-          alt="Pink"
-        >
-      </a>
-    </div>
+    <a class="page-footer__logo-wrap" href="index.html">
+      <svg class="page-footer__logo" width="150" height="40" role="img" aria-label="Пинк">
+        <use class="page-footer__logo-icon page-footer__logo-icon--mobile" xlink:href="img/sprite.svg#pink-blue-mobile"></use>
+        <use class="page-footer__logo-icon page-footer__logo-icon--desktop" xlink:href="img/sprite.svg#pink-blue-desktop"></use>
+      </svg>
+    </a>
 
-    <div class="page-footer__socials-group page-footer__socials-group--form">
+    <div class="page-footer__socials-group">
       <a class="page-footer__social page-footer__social--tweeter" href="#">Twitter</a>
       <a class="page-footer__social page-footer__social--facebook" href="#">Facebook</a>
       <a class="page-footer__social page-footer__social--youtube" href="#">Youtube</a>
     </div>
 
-    <div class="page-footer__copyright page-footer__copyright--form">
+    <div class="page-footer__copyright">
       <span class="page-footer__copyright-text">Разработано</span>
-      <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/">
-        <img
-          src="img/logo-htmlacademy.svg"
-          width="27"
-          height="34"
-          alt="HTML Academy"
-        >
+      <a class="page-footer__copyright-logo-wrap" href="https://htmlacademy.ru/">
+        <svg width="27" height="34" class="page-footer__copyright-logo" role="img" aria-label="HTML Academy">
+          <use xlink:href="img/sprite.svg#html-academy"></use>
+        </svg>
       </a>
     </div>
 

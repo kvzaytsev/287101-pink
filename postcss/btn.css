@@ -20,5 +20,17 @@
 
     text-transform: uppercase;
     color: $white;
+
+    &:hover {
+      background-color: $green-hvr;
+    }
+
+    &:active {
+      color: $white-03;
+    }
+
+    &:disabled {
+      background-color:$lightGrey;
+    }
   }
 }

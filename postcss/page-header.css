@@ -1,22 +1,48 @@
 .page-header {
-  background-color: $deepBlue;
+  background: $downloads-bkg url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 257px;
+  background-size: 700px 462px;
+
+  @media (min-width: $tablet-width) {
+    background: $downloads-bkg url(../img/bg-back-tablet@1x.jpg) no-repeat 50% 255px;
+    background-size: 1200px 729px;
+  }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    background: $downloads-bkg url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 0;
+    background-size: 2560px 853px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: $downloads-bkg  url(../img/bg-back-mobile@2x.jpg) no-repeat 50% 257px;
+    background-size: 700px 462px;
+
+    @media (min-width: $tablet-width) {
+      background: $downloads-bkg url(../img/bg-back-tablet@2x.jpg) no-repeat 50% 255px;
+      background-size: 1200px 729px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: $downloads-bkg url(../img/bg-back-desktop@2x.jpg) no-repeat 50% 0;
+      background-size: 2560px 853px;
+    }
+  }
+}
+
+.page-header__top {
+  @media (min-width: $desktop-width) {
+    background: rgba(0,0,0,.2);
   }
 }
 
 .page-header__inner {
+  background-color: $deepBlue;
+
   @media (min-width: $desktop-width) {
     @mixin container;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    background: none;
 
     display: flex;
     justify-content: space-between;
-
-    background: transparent;
   }
 }
 
@@ -24,48 +50,108 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 20px 20px 22px 20px;
+  padding: 21px 20px 21px 20px;
   border-bottom: 1px solid $black;
 
   @media (min-width: $tablet-width) {
 
-    padding-top: 43px;
-    padding-bottom: 39px;
+    padding-top: 27px;
+    padding-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: auto;
-    padding: 0;
-    align-self: center;
+
+    padding: 27px 9px 10px;
+    align-self: flex-start;
     border-bottom: none;
     margin: 0;
   }
 }
 
-.page-header__toggle {
+.page-header__logo {
+  width: 75px;
+  height: 22px;
+
+  fill: $white;
+
+  &:hover {
+    fill: $contacts-red;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: .3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.page-header__logo-icon {
+
+  &--mobile {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.page-header__toggle-wrap {
   padding: 0;
   border: none;
   background-color: transparent;
   font-size: 0;
+  align-self: flex-end;
+  cursor: pointer;
+  fill: $white;
+
+  &:hover {
+    fill: $contacts-red;
+  }
+
+  &:active {
+    fill: $red-03;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
   }
-
-  &--close::before {
-    content: "";
-    display: block;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    width: 24px;
-    height: 24px;
-  }
 }
 
-.page-header__title-wrap {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 26%;
-  background-size: 100% auto;
+.page-header__toggle {
+  width: 24px;
+  height: 24px;
+}
+
+.page-header__toggle-icon {
+
+  &--burger {
+    display: none;
+  }
 }
 
 .page-header__title {
@@ -87,31 +173,31 @@
   }
 
   &--form {
-    padding-top: 30px;
+    padding-top: 29px;
     padding-bottom: 53px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 70px;
+      padding-top: 69px;
       padding-bottom: 79px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 173px;
+      padding-top: 62px;
       padding-bottom: 101px;
     }
   }
 
   &--photo {
-    padding-top: 30px;
+    padding-top: 29px;
     padding-bottom: 82px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 70px;
+      padding-top: 69px;
       padding-bottom: 140px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 173px 200px 101px 200px;
+      padding: 62px 200px 101px 200px;
     }
   }
 }

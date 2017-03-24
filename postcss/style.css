@@ -13,7 +13,6 @@
 @import "tariffs.css";
 @import "contacts.css";
 @import "map.css";
-@import "form-page-content.css";
 @import "trip.css";
 @import "form/trip-form.css";
 @import "form/person.css";
@@ -22,7 +21,6 @@
 @import "form/platforms.css";
 @import "form/emotions.css";
 @import "popup.css";
-@import "photo-page-content.css";
 @import "post-wall.css";
 @import "post.css";
 @import "new-post.css";

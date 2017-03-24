@@ -35,33 +35,49 @@
 <body class="outlines-on">
 
   <header class="page-header">
-    <div class="page-header__inner">
 
-      <div class="page-header__panel">
-        <a class="page-header__logo">
-          <img width="75" height="22" alt="Pink" src="img/logo-pink-white-mobile.svg">
-        </a>
-        <button class="page-header__toggle page-header__toggle--close" type="button">Закрыть</button>
+    <div class="page-header__top">
+      <div class="page-header__inner">
+
+        <div class="page-header__panel">
+
+          <a class="page-header__logo-wrap" href="index.html">
+            <svg class="page-header__logo" width="75" height="22" role="img" aria-label="Пинк">
+              <use class="page-header__logo-icon page-header__logo-icon--mobile" xlink:href="img/sprite.svg#pink-white-mobile"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--tablet" xlink:href="img/sprite.svg#pink-white-tablet"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--desktop" xlink:href="img/sprite.svg#pink-white-desktop"></use>
+            </svg>
+          </a>
+
+          <button class="page-header__toggle-wrap" type="button">
+            <svg width="24" height="24" >
+              <use class="page-header__toggle page-header__toggle--cross" xlink:href="img/sprite.svg#menu-cross"></use>
+              <use class="page-header__toggle page-header__toggle--burger" xlink:href="img/sprite.svg#menu-burger"></use>
+            </svg>
+          </button>
+
+        </div>
+
+        <nav class="main-nav main-nav--open">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__link--active">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
-
-      <nav class="main-nav main-nav--open">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-
     </div>
+
 
     <div class="page-header__title-wrap">
       <h1 class="page-header__title page-header__title--photo">
@@ -71,7 +87,7 @@
 
   </header>
 
-  <main class="photo-page-content">
+  <main class="page-content page-content--photo">
 
     <section class="post-wall">
 
@@ -84,13 +100,12 @@
 
         <article class="post post--of-a-day">
           <h3 class="visually-hidden">Пост пользователя Анна</h3>
-          <a class="post__img-wrap post__img-wrap--of-a-day">
-            <img
-              src="img/panorama-mobile@1x.jpg"
-              width="320"
-              height="137"
-              alt="Мост над рекой"
-            >
+          <a class="post__img-wrap post__img-wrap--of-a-day" href="#">
+            <picture>
+              <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" alt="Мост над рекой" srcset="img/panorama-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="post__content post__content--of-a-day">
             <div class="post__summary">
@@ -112,12 +127,11 @@
         <article class="post">
           <h3 class="visually-hidden">Пост пользователя Левон</h3>
           <a class="post__img-wrap">
-            <img
-              src="http://placehold.it/280x180"
-              width="280"
-              height="180"
-              alt="Автомобиль"
-            >
+            <picture>
+              <source media="(min-width:960px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" alt="Автомобиль" srcset="img/photo-1-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="post__content">
             <div class="post__summary">
@@ -138,12 +152,11 @@
         <article class="post">
           <h3 class="visually-hidden">Пост пользователя Антон</h3>
           <a class="post__img-wrap">
-            <img
-              src="http://placehold.it/280x180"
-              width="280"
-              height="180"
-              alt="Барабанная установка"
-            >
+            <picture>
+              <source media="(min-width:960px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка" srcset="img/photo-2-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="post__content">
             <div class="post__summary">
@@ -164,12 +177,11 @@
         <article class="post">
           <h3 class="visually-hidden">Пост пользователя Борис</h3>
           <a class="post__img-wrap">
-            <img
-              src="http://placehold.it/280x180"
-              width="280"
-              height="180"
-              alt="Стеклянная крыша"
-            >
+            <picture>
+              <source media="(min-width:960px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg" alt="Стеклянная крыша" srcset="img/photo-3-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="post__content">
             <div class="post__summary">
@@ -190,12 +202,11 @@
         <article class="post">
           <h3 class="visually-hidden">Пост пользователя Сергей</h3>
           <a class="post__img-wrap">
-            <img
-              src="http://placehold.it/280x180"
-              width="280"
-              height="180"
-              alt="Кубанский рынок"
-            >
+            <picture>
+              <source media="(min-width:960px)" srcset="img/photo-4-desktop@1x.jpg, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-4-tablet@1x.jpg, img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile@1x.jpg" alt="Кубанский рынок" srcset="img/photo-4-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="post__content">
             <div class="post__summary">
@@ -216,12 +227,11 @@
         <article class="post">
           <h3 class="visually-hidden">Пост пользователя Максим</h3>
           <a class="post__img-wrap">
-            <img
-              src="http://placehold.it/280x180"
-              width="280"
-              height="180"
-              alt="Ноги на камнях"
-            >
+            <picture>
+              <source media="(min-width:960px)" srcset="img/photo-5-desktop@1x.jpg, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-5-tablet@1x.jpg, img/photo-5-tablet@2x.jpg 2x">
+              <img src="img/photo-5-mobile@1x.jpg" alt="Ноги на камнях" srcset="img/photo-5-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="post__content">
             <div class="post__summary">
@@ -241,12 +251,11 @@
         <article class="post">
           <h3 class="visually-hidden">Пост пользователя Надежда</h3>
           <a class="post__img-wrap">
-            <img
-              src="http://placehold.it/280x180"
-              width="280"
-              height="180"
-              alt="Крыло самолёта"
-            >
+            <picture>
+              <source media="(min-width:960px)" srcset="img/photo-6-desktop@1x.jpg, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-6-tablet@1x.jpg, img/photo-6-tablet@2x.jpg 2x">
+              <img src="img/photo-6-mobile@1x.jpg" alt="Крыло самолёта" srcset="img/photo-6-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="post__content">
             <div class="post__summary">
@@ -279,12 +288,11 @@
         <form class="new-post-form" action="https://echo.htmlacademy.ru/" method="post">
 
           <div class="new-post-form__preview">
-            <img
-              src="http://placehold.it/280x374"
-              width="280"
-              height="374"
-              alt="Предпросмотр Фотографии"
-            >
+            <picture>
+              <source media="(min-width:960px)" srcset="img/photo-7-desktop@1x.jpg, img/photo-7-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-7-tablet@1x.jpg, img/photo-7-tablet@2x.jpg 2x">
+              <img src="img/photo-7-mobile@1x.jpg" alt="Предпросмотр Фотографии" srcset="img/photo-7-mobile@2x.jpg 2x">
+            </picture>
           </div>
 
           <div class="new-post-form__content">
@@ -293,6 +301,9 @@
 
               <div class="new-post-form__filter-wrap new-post-form__filter-wrap--crop">
                 <button class="new-post-form__filter new-post-form__filter--crop new-post-form__filter--active" type="button">
+                  <svg class="new-post-form__filter-icon new-post-form__filter-icon--crop" width="45" height="45">
+                    <use xlink:href="img/sprite.svg#editor-crop"></use>
+                  </svg>
                   Обрезать
                 </button>
                 <div class="new-post-form__slider new-post-form__slider--crop">
@@ -304,6 +315,9 @@
 
               <div class="new-post-form__filter-wrap new-post-form__filter-wrap--fill">
                 <button class="new-post-form__filter new-post-form__filter--fill" type="button">
+                  <svg class="new-post-form__filter-icon new-post-form__filter-icon--fill" width="45" height="45">
+                    <use xlink:href="img/sprite.svg#editor-fill"></use>
+                  </svg>
                   Заливка
                 </button>
                 <div class="new-post-form__slider new-post-form__slider--fill">
@@ -315,6 +329,9 @@
 
               <div class="new-post-form__filter-wrap new-post-form__filter-wrap--сontrast">
                 <button class="new-post-form__filter new-post-form__filter--сontrast" type="button">
+                  <svg class="new-post-form__filter-icon new-post-form__filter-icon--сontrast" width="45" height="45">
+                    <use xlink:href="img/sprite.svg#editor-contrast"></use>
+                  </svg>
                   Контрастность
                 </button>
                 <div class="new-post-form__slider new-post-form__slider--сontrast">
@@ -339,8 +356,6 @@
 
           </div>
 
-
-
         </form>
       </div>
 
@@ -348,34 +363,27 @@
 
   </main>
 
-  <footer class="page-footer page-footer--photo">
+  <footer class="page-footer">
 
-    <div class="page-footer__logo-wrap page-footer__logo-wrap--photo">
-      <a class="page-footer__logo" href="index.html">
-        <img
-          src="img/logo-pink-blue-mobile.svg"
-          width="148"
-          height="42"
-          alt="Pink"
-        >
-      </a>
-    </div>
+    <a class="page-footer__logo-wrap" href="index.html">
+      <svg class="page-footer__logo" width="150" height="40" role="img" aria-label="Пинк">
+        <use class="page-footer__logo-icon page-footer__logo-icon--mobile" xlink:href="img/sprite.svg#pink-blue-mobile"></use>
+        <use class="page-footer__logo-icon page-footer__logo-icon--desktop" xlink:href="img/sprite.svg#pink-blue-desktop"></use>
+      </svg>
+    </a>
 
-    <div class="page-footer__socials-group page-footer__socials-group--photo">
+    <div class="page-footer__socials-group">
       <a class="page-footer__social page-footer__social--tweeter" href="#">Twitter</a>
       <a class="page-footer__social page-footer__social--facebook" href="#">Facebook</a>
       <a class="page-footer__social page-footer__social--youtube" href="#">Youtube</a>
     </div>
 
-    <div class="page-footer__copyright page-footer__copyright--photo">
+    <div class="page-footer__copyright">
       <span class="page-footer__copyright-text">Разработано</span>
-      <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/">
-        <img
-          src="img/logo-htmlacademy.svg"
-          width="27"
-          height="34"
-          alt="HTML Academy"
-        >
+      <a class="page-footer__copyright-logo-wrap" href="https://htmlacademy.ru/">
+        <svg width="27" height="34" class="page-footer__copyright-logo" role="img" aria-label="HTML Academy">
+          <use xlink:href="img/sprite.svg#html-academy"></use>
+        </svg>
       </a>
     </div>
 

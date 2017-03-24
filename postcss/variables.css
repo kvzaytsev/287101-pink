@@ -3,12 +3,23 @@ $tablet-width: 660px;
 $desktop-width: 960px;
 
 $deepBlue: #283645;
+$deep-blue-01: rgba(40,54,69,.1);
+$deep-blue-03: rgba(40,54,69,.3);
+$deep-blue-06: rgba(40,54,69,.6);
+
 $white: #ffffff;
+$white-03: rgba(255,255,255,.3);
+
+$red-03: rgba(210,40,86, .3);
+
 $black: #000000;
 $grey: #f2f2f2;
 $contacts-red: #d22856;
 $lightGrey: #e5e5e5;
+
 $green: #29ac68;
+$green-hvr: #1c9b5e;
+$green-yes: #3dc644;
 
 $menu-item-border-top: #485461;
 $menu-item-border-bottom: #000001;
@@ -29,3 +40,6 @@ $platforms-bkg: $grey;
 $red: #D12358;
 
 $newPostGrey: #dddfe0;
+
+$new-post-reset: rgba(40,54,69,.1);
+$new-post-reset-hvr: rgba(40,54,69,.3);

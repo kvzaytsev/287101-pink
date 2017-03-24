@@ -107,6 +107,16 @@ input[type="radio"] + label::before {
   }
 }
 
+input[type="radio"] + label:hover {
+  &::before {
+    box-shadow: 0 0 0 2px $deepBlue;
+  }
+}
+
 input[type="radio"]:checked + label::before {
   background: $contacts-red;
+}
+
+input[type="radio"]:active + label::before {
+  box-shadow: 0 0 0 2px $contacts-red;
 }

@@ -43,6 +43,15 @@
   padding: 15px 18px;
   box-sizing: border-box;
 
+  &:hover {
+    border: 2px solid $deepBlue;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid $contacts-red;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 500px;
     min-height: 193px;

@@ -108,4 +108,13 @@
 
   border: 2px solid $lightGrey;
   border-radius: 2px;
+
+  &:hover {
+    border: 2px solid $deepBlue;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid $contacts-red;
+  }
 }

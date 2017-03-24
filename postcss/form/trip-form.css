@@ -60,6 +60,7 @@
   padding-right: 10px;
   box-sizing: border-box;
 
+
   @media (max-width: $mobile-width) {
     @mixin container;
     padding-left: 20px;
@@ -75,7 +76,7 @@
     align-items: center;
 
     padding-top: 66px;
-    padding-bottom: 48px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {

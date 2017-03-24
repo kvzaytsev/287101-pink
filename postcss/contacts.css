@@ -88,6 +88,7 @@
 }
 
 .contacts__item--address {
+
   @media (min-width: $tablet-width) {
     width: 250px;
     margin-bottom: 28px;
@@ -101,6 +102,14 @@
 .contacts__item--tel {
   margin-bottom: 24px;
 
+  &:hover .contacts__value {
+    color: $deepBlue;
+  }
+
+  &:active .contacts__value {
+    color: $deep-blue-03;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
   }
@@ -111,6 +120,15 @@
 }
 
 .contacts__item--email {
+
+  &:hover .contacts__value {
+    color: $deepBlue;
+  }
+
+  &:active .contacts__value {
+    color: $deep-blue-03;
+  }
+
   @media (min-width: $desktop-width) {
     order: 3;
   }

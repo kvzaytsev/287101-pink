@@ -65,26 +65,30 @@
 }
 
 .post__img-wrap--of-a-day {
-  position: relative;
 
   min-width: 320px;
   padding-left: 0;
   padding-right: 0;
-
   margin-left: -20px;
+
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     min-width: 660px;
     min-height: 510px;
-    margin-left: -40px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 960px;
-    min-height: 505px;
-
+    min-height: 506px;
     margin-left: -10px;
   }
+}
+
+.post__img-wrap--of-a-day img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .post__img-wrap--of-a-day::before {
@@ -93,9 +97,22 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 10px 15px;
+  padding: 9px 20px;
   color: white;
   background: $contacts-red;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+  }
 }
 
 .post__content {
@@ -174,13 +191,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 240px;
-  }
-}
-
-.post__likes--of-a-day {
-  @media (min-width: $tablet-width) {
-    width: 120px;
   }
 }
 
@@ -206,6 +216,7 @@
   fill: $contacts-red;
   background: url(../img/icon-heart.svg);
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-left: 17px;

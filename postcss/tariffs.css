@@ -3,8 +3,9 @@
   position: relative;
   padding-top: 90px;
   padding-bottom: 96px;
-  background: grey url("../img/bg-triangle-white.svg") no-repeat;
-  background-size: 100% auto;
+  background: $grey url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: calc(100% + 5px) auto;
+  background-position-x: -5px;
 
   @media (min-width: $tablet-width) {
     padding-top: 89px;
@@ -124,7 +125,7 @@
 
 .tariffs-table__feature {
   position: relative;
-  padding: 16px 22px 15px 22px;
+  padding: 16px 18px 15px 22px;
   border: 2px solid $tariffs-table-border;
   background: $white;
   box-sizing: border-box;
@@ -198,9 +199,18 @@
 .tariffs__bullet {
   padding: 0;
   border: none;
+  margin-right: 15px;
   background: none;
   font-size: 0;
   box-sizing: border-box;
+
+  &:hover::before {
+    background: $deep-blue-06;
+  }
+
+  &:active::before {
+    background: $deep-blue-01;
+  }
 }
 
 .tariffs__bullet::before {
@@ -211,11 +221,10 @@
   height: 6px;
   background: #bac1c7;
   border-radius: 50%;
-  margin-right: 15px;
   cursor: pointer;
 }
 
-.tariffs__bullet:last-child::before {
+.tariffs__bullet:last-child {
   margin-right: 0;
 }
 
@@ -223,4 +232,8 @@
   background: none;
   box-shadow: 0 0 0 3px $black;
   cursor: auto;
+}
+
+.tariffs__bullet--active:hover::before {
+  background: none;
 }
