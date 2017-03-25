@@ -43,6 +43,7 @@
 }
 
 .tariffs-table__header {
+  position: relative;
 
   padding-top: 17px;
   padding-bottom: 18px;
@@ -64,6 +65,35 @@
 
     border-bottom: none;
   }
+}
+
+.tariffs-table__header--hit {
+  background: $tariffs-table-head url("../img/bg-hit.svg") no-repeat 0 0;
+  background-size: 74px 73px;
+
+  &::after {
+    content: "Хит";
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    display: block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+  }
+
+   @media (min-width: $tablet-width) {
+     background: $tariffs-table-head url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+     background-size: 61px 61px;
+
+     &::after {
+        top: 10px;
+        left: 7px;
+     }
+   }
 }
 
 .tariffs-table__name {

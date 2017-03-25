@@ -5,7 +5,7 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-
+  <!--
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <style>
     HTML {
@@ -30,11 +30,11 @@
 
   </style>
   <script src="../node_modules/pixel-glass/script.js"></script>
-
+  -->
 </head>
 <body class="outlines-on">
 
-  <header class="page-header">
+  <header class="page-header no-js">
 
     <div class="page-header__top">
       <div class="page-header__inner">
@@ -49,10 +49,10 @@
             </svg>
           </a>
 
-          <button class="page-header__toggle-wrap" type="button">
-            <svg width="24" height="24" >
-              <use class="page-header__toggle page-header__toggle--cross" xlink:href="img/sprite.svg#menu-cross"></use>
-              <use class="page-header__toggle page-header__toggle--burger" xlink:href="img/sprite.svg#menu-burger"></use>
+          <button class="page-header__toggle-wrap js-menu-toggle" type="button">
+            <svg class="page-header__toggle" width="24" height="24" >
+              <use class="page-header__toggle-icon page-header__toggle-icon--cross" xlink:href="img/sprite.svg#menu-cross"></use>
+              <use class="page-header__toggle-icon page-header__toggle-icon--burger" xlink:href="img/sprite.svg#menu-burger"></use>
             </svg>
           </button>
 
