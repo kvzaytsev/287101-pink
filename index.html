@@ -5,33 +5,6 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,  initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-
-
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <style>
-    HTML {
-      background: url( 'preview/index/pink-index-mobile.jpg' ) 50% 0 no-repeat;
-    }
-
-    @media (min-width: 660px) {
-      HTML {
-        background-image: url( 'preview/index/pink-index-tablet.jpg' );
-      }
-    }
-
-    @media (min-width: 960px) {
-      HTML {
-        background-image: url( 'preview/index/pink-index-desktop.jpg' );
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-
-  </style>
-  <script src="../node_modules/pixel-glass/script.js"></script>
-
 </head>
 
 <body class="outlines-on">
@@ -89,11 +62,23 @@
             <p class="downloads__into-text">Взгляните на жизнь иначе!</p>
           </div>
 
-          <a class="downloads__button btn btn--round" href="#">Скачать приложение</a>
+          <a class="downloads__button btn btn--round" href="http://www.apple.com/ru/itunes/download">Скачать приложение</a>
           <div class="downloads__platforms">
-            <a class="downloads__platform downloads__platform--apple" href="#">Apple</a>
-            <a class="downloads__platform downloads__platform--android" href="#">Android</a>
-            <a class="downloads__platform downloads__platform--win" href="#">Window</a>
+            <a class="downloads__platform downloads__platform--apple" href="#">
+              <svg width="47" height="56">
+                <use xlink:href="img/sprite.svg#logo-apple"></use>
+              </svg>
+            </a>
+            <a class="downloads__platform downloads__platform--android" href="#">
+              <svg width="42" height="47">
+                <use xlink:href="img/sprite.svg#logo-android"></use>
+              </svg>
+            </a>
+            <a class="downloads__platform downloads__platform--win" href="#">
+              <svg width="44" height="42">
+                <use xlink:href="img/sprite.svg#logo-microsoft"></use>
+              </svg>
+            </a>
           </div>
           <p class="downloads__desc">
             Доступно для iPhone, iPad, Android,<br>
@@ -328,8 +313,8 @@
 
   </footer>
 
-  <script src="js/map.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+  <script src="js/map.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

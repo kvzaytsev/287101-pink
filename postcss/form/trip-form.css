@@ -42,8 +42,9 @@
   line-height: 18px;
 
   &--contacts {
-    @media (max-width: $mobile-width) {
-      display: none;
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
     }
   }
 
@@ -55,18 +56,11 @@
 
 .trip-form__bottom {
   order: 6;
+  @mixin container;
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
-
-
-  @media (max-width: $mobile-width) {
-    @mixin container;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
 
   @media (min-width: $tablet-width) {
 
@@ -75,8 +69,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 66px;
-    padding-bottom: 55px;
+    padding: 66px 10px 55px;
   }
 
   @media (min-width: $desktop-width) {

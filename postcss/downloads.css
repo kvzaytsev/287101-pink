@@ -140,31 +140,20 @@
 .downloads__platform {
   font-size: 0;
 
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: auto 18px;
 
-  &::before {
-    content: "";
-    display: inline-block;
-  }
-
-  &--apple::before {
+  &--apple {
     width: 46px;
     height: 56px;
-    background-image: url("../img/logo-apple.svg");
   }
 
-  &--android::before {
+  &--android {
     width: 42px;
     height: 47px;
-    background-image: url("../img/logo-android.svg");
   }
 
-  &--win::before {
+  &--win {
     width: 44px;
     height: 42px;
-    background-image: url("../img/logo-microsoft.svg");
   }
 }

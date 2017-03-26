@@ -41,9 +41,6 @@
   }
 }
 
-.map--loaded {
-  background: none;
-}
 
 .map::before {
   content: "";
@@ -64,5 +61,15 @@
 
   @media (min-width: $desktop-width) {
     height: 100px;
+  }
+}
+
+
+.map--loaded {
+  background: none;
+  width: 100%;
+
+  &::before {
+    height: 11vw;
   }
 }

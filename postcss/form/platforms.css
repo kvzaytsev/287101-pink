@@ -33,9 +33,16 @@
 }
 
 .trip-form__platforms {
-  @media (max-width: $mobile-width) {
-    @mixin container;
-    @mixin reset-fieldset;
+  @mixin reset-fieldset;
+  @mixin container;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 2px;
+    width: auto;
+    padding: 6px 12px 10px;
+    box-sizing: border-box;
+
+    border: 2px solid $lightGrey;
   }
 
 }
