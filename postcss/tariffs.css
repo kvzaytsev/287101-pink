@@ -31,6 +31,7 @@
   width: 840px;
 
   border-collapse: collapse;
+  border-spacing: 0;
 
   @media (min-width: $tablet-width) {
     width: 620px;

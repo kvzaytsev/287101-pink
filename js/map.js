@@ -6,6 +6,7 @@ var ADDRESS = {
   lng: 30.321836
 };
 
+var center;
 var map;
 
 function initMap() {
@@ -13,10 +14,15 @@ function initMap() {
 
   container.classList.add(MAP_LOADED_CLASS);
   createMap(container);
-  window.addEventListener('resize', throttle(centerMap, 100), true);
+  google.maps.event.addDomListener(window, "resize", onResize);
+}
+function onResize() {
+  google.maps.event.trigger(map, "resize");
+  map.setCenter(center);
 }
 
 function createMap(container) {
+  center = new google.maps.LatLng(ADDRESS.lat, ADDRESS.lng);
   map = new google.maps.Map(container, {
     center: ADDRESS,
     scrollwheel: false,
@@ -28,32 +34,4 @@ function createMap(container) {
     map: map,
     icon: MARKER_ICON
   });
-}
-
-function centerMap(){
-  var center = new google.maps.LatLng(ADDRESS.lat, ADDRESS.lng);
-  map.panTo(center);
-}
-
-function throttle(fn, ms) {
-  var waiting = false;
-
-  function throttled() {
-    if (waiting) {
-      return
-    }
-
-    fn();
-    waiting = true;
-
-    setTimeout(
-      function() {
-        waiting = false;
-        throttled()
-      },
-      ms
-    );
-  }
-
-  return throttled;
 }

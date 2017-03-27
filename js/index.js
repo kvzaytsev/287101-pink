@@ -30,9 +30,7 @@ function init() {
 }
 
 function onToggleClick() {
-  this.classList.contains(MENU_CLOSE_CLASS)
-    ? this.classList.remove(MENU_CLOSE_CLASS)
-    : this.classList.add(MENU_CLOSE_CLASS);
+  this.classList.toggle(MENU_CLOSE_CLASS);
 }
 
 function removeClassIfExists(classList) {
