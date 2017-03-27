@@ -86,15 +86,15 @@
     transform: rotate(-45deg);
   }
 
-   @media (min-width: $tablet-width) {
-     background: $tariffs-table-head url("../img/bg-hit-tablet.svg") no-repeat 0 0;
-     background-size: 61px 61px;
+  @media (min-width: $tablet-width) {
+    background: $tariffs-table-head url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+    background-size: 61px 61px;
 
-     &::after {
-        top: 10px;
-        left: 7px;
-     }
-   }
+    &::after {
+      top: 10px;
+      left: 7px;
+    }
+  }
 }
 
 .tariffs-table__name {
