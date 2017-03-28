@@ -21,18 +21,32 @@
 }
 
 .reviews__slider {
+  position: relative;
   padding-bottom: 27px;
+  min-height: 228px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 34px;
+    min-height: 181px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
+    min-height: 183px;
   }
 }
 
 .reviews__slide {
-  display: flex;
+  position: absolute;
+  display: none;
+
   flex-direction: column;
   padding: 0 21px;
   text-align: center;
+
+  &--active {
+    display: flex;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 10px;
@@ -40,7 +54,8 @@
 
   @media (min-width: $desktop-width) {
     width: 700px;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
