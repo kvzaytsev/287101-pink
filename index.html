@@ -4,38 +4,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,  initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <style>
-    HTML {
-      background: url( 'preview/index/pink-index-mobile.jpg' ) 50% 0 no-repeat;
-    }
-
-    @media (min-width: 660px) {
-      HTML {
-        background-image: url( 'preview/index/pink-index-tablet.jpg' );
-      }
-    }
-
-    @media (min-width: 960px) {
-      HTML {
-        background-image: url( 'preview/index/pink-index-desktop.jpg' );
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-
-  </style>
-  <script src="../node_modules/pixel-glass/script.js"></script>
-
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="outlines-on">
+<body>
 
-  <header class="page-header">
+  <header class="page-header no-js">
 
     <div class="page-header__top">
       <div class="page-header__inner">
@@ -44,24 +18,24 @@
 
           <a class="page-header__logo-wrap">
             <svg class="page-header__logo" width="75" height="22" role="img" aria-label="Пинк">
-              <use class="page-header__logo-icon page-header__logo-icon--mobile" xlink:href="img/sprite.svg#pink-white-mobile"></use>
-              <use class="page-header__logo-icon page-header__logo-icon--tablet" xlink:href="img/sprite.svg#pink-white-tablet"></use>
-              <use class="page-header__logo-icon page-header__logo-icon--desktop" xlink:href="img/sprite.svg#pink-white-desktop"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--mobile" xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--tablet" xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--desktop" xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
             </svg>
           </a>
 
-          <button class="page-header__toggle-wrap" type="button">
+          <button class="page-header__toggle-wrap js-menu-toggle" type="button">
             <svg class="page-header__toggle" width="24" height="24" >
-              <use class="page-header__toggle-icon page-header__toggle-icon--cross" xlink:href="img/sprite.svg#menu-cross"></use>
-              <use class="page-header__toggle-icon page-header__toggle-icon--burger" xlink:href="img/sprite.svg#menu-burger"></use>
+              <use class="page-header__toggle-icon page-header__toggle-icon--cross" xlink:href="img/sprite.svg#icon-menu-cross"></use>
+              <use class="page-header__toggle-icon page-header__toggle-icon--burger" xlink:href="img/sprite.svg#icon-menu-burger"></use>
             </svg>
           </button>
 
         </div>
 
-        <nav class="main-nav main-nav--open">
+        <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__link--active">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -88,11 +62,23 @@
             <p class="downloads__into-text">Взгляните на жизнь иначе!</p>
           </div>
 
-          <a class="downloads__button btn btn--round" href="#">Скачать приложение</a>
+          <a class="downloads__button btn btn--round" href="http://www.apple.com/ru/itunes/download">Скачать приложение</a>
           <div class="downloads__platforms">
-            <a class="downloads__platform downloads__platform--apple" href="#">Apple</a>
-            <a class="downloads__platform downloads__platform--android" href="#">Android</a>
-            <a class="downloads__platform downloads__platform--win" href="#">Window</a>
+            <a class="downloads__platform downloads__platform--apple" href="#">
+              <svg width="47" height="56">
+                <use xlink:href="img/sprite.svg#logo-apple"></use>
+              </svg>
+            </a>
+            <a class="downloads__platform downloads__platform--android" href="#">
+              <svg width="42" height="47">
+                <use xlink:href="img/sprite.svg#logo-android"></use>
+              </svg>
+            </a>
+            <a class="downloads__platform downloads__platform--win" href="#">
+              <svg width="44" height="42">
+                <use xlink:href="img/sprite.svg#logo-microsoft"></use>
+              </svg>
+            </a>
           </div>
           <p class="downloads__desc">
             Доступно для iPhone, iPad, Android,<br>
@@ -164,6 +150,19 @@
 
       <div class="reviews__slider">
 
+        <div class="reviews__slide reviews__slide--active">
+          <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__author-aux">25 лет, водитель трамвая</p>
+          <p class="reviews__text">
+            <span class="reviews__text-part reviews__text-part--quote">«</span>
+            <span class="reviews__text-part">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </span>
+            <span class="reviews__text-part reviews__text-part--quote">»</span>
+          </p>
+        </div>
+
         <div class="reviews__slide">
           <p class="reviews__author-name">Николай Петров</p>
           <p class="reviews__author-aux">25 лет, водитель трамвая</p>
@@ -176,6 +175,20 @@
             <span class="reviews__text-part reviews__text-part--quote">»</span>
           </p>
         </div>
+
+        <div class="reviews__slide">
+          <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__author-aux">25 лет, водитель трамвая</p>
+          <p class="reviews__text">
+            <span class="reviews__text-part reviews__text-part--quote">«</span>
+            <span class="reviews__text-part">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </span>
+            <span class="reviews__text-part reviews__text-part--quote">»</span>
+          </p>
+        </div>
+
       </div>
 
       <div class="reviews__bullets">
@@ -187,12 +200,12 @@
       <div class="reviews__nav">
         <button type="button" class="reviews__arrow reviews__arrow--prev">
           <svg width="22" height="42">
-            <use xlink:href="img/sprite.svg#review-arrow-left"></use>
+            <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
           </svg>
         </button>
         <button type="button" class="reviews__arrow reviews__arrow--next">
           <svg width="22" height="42">
-            <use xlink:href="img/sprite.svg#review-arrow-right"></use>
+            <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
           </svg>
         </button>
       </div>
@@ -210,7 +223,7 @@
                 <span class="tariffs-table__name">База</span>
                 <span class="tariffs-table__price">1,99 USD</span>
               </th>
-              <th class="tariffs-table__header">
+              <th class="tariffs-table__header tariffs-table__header--hit">
                 <span class="tariffs-table__name">Стандарт</span>
                 <span class="tariffs-table__price">3,99 USD</span>
               </th>
@@ -297,14 +310,8 @@
 
     </section>
 
-    <section class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989925305714!2d30.32157972497938!3d59.93879603747127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1479149284956"
-        height="100%"
-        width="100%"
-        frameborder="0"
-        style="border:0"
-      ></iframe>
+    <section id="map" class="map">
+      <h2 class="visually-hidden">Карта</h2>
     </section>
 
   </main>
@@ -312,8 +319,8 @@
 
     <a class="page-footer__logo-wrap">
       <svg class="page-footer__logo" width="150" height="40" role="img" aria-label="Пинк">
-        <use class="page-footer__logo-icon page-footer__logo-icon--mobile" xlink:href="img/sprite.svg#pink-blue-mobile"></use>
-        <use class="page-footer__logo-icon page-footer__logo-icon--desktop" xlink:href="img/sprite.svg#pink-blue-desktop"></use>
+        <use class="page-footer__logo-icon page-footer__logo-icon--mobile" xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+        <use class="page-footer__logo-icon page-footer__logo-icon--desktop" xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
       </svg>
     </a>
 
@@ -327,11 +334,14 @@
       <span class="page-footer__copyright-text">Разработано</span>
       <a class="page-footer__copyright-logo-wrap" href="https://htmlacademy.ru/">
         <svg width="27" height="34" class="page-footer__copyright-logo" role="img" aria-label="HTML Academy">
-          <use xlink:href="img/sprite.svg#html-academy"></use>
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
 
   </footer>
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

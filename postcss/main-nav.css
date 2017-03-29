@@ -53,7 +53,7 @@
   }
 }
 
-.main-nav__link--active .main-nav__link {
+.main-nav__item--active .main-nav__link {
   @media (min-width: $desktop-width) {
     box-shadow: 0 2px 0 0 $white;
   }
@@ -71,7 +71,7 @@
 
 .main-nav__link[href]:active {
   @media (min-width: $desktop-width) {
-    color: $ white;
+    color: $white;
   }
   opacity: 0.3;
 }

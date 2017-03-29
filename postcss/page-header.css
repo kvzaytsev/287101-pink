@@ -11,21 +11,48 @@
     background: $downloads-bkg url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 0;
     background-size: 2560px 853px;
   }
+}
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: $downloads-bkg  url(../img/bg-back-mobile@2x.jpg) no-repeat 50% 257px;
-    background-size: 700px 462px;
+.page-header.no-js .page-header__toggle-wrap{
+  display: none;
+}
 
-    @media (min-width: $tablet-width) {
-      background: $downloads-bkg url(../img/bg-back-tablet@2x.jpg) no-repeat 50% 255px;
-      background-size: 1200px 729px;
-    }
+.page-header.menu-closed {
+  background-position: 50% 0;
+}
 
-    @media (min-width: $desktop-width) {
-      background: $downloads-bkg url(../img/bg-back-desktop@2x.jpg) no-repeat 50% 0;
-      background-size: 2560px 853px;
-    }
+.page-header.menu-closed .page-header__inner {
+
+  background-color: $black-02;
+
+  @media (min-width: $desktop-width) {
+    background: none;
   }
+}
+
+.page-header.menu-closed .page-header__panel {
+  border: none;
+}
+
+.page-header.menu-closed .main-nav {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header.menu-closed .page-header__toggle {
+  width: 50px;
+  height: 24px;
+}
+
+.page-header.menu-closed .page-header__toggle-icon--burger {
+  display: block;
+}
+
+.page-header.menu-closed .page-header__toggle-icon--cross {
+  display: none;
 }
 
 .page-header__top {
@@ -38,7 +65,8 @@
   background-color: $deepBlue;
 
   @media (min-width: $desktop-width) {
-    @mixin container;
+    width: 960px;
+    margin: 0 auto;
     background: none;
 
     display: flex;
@@ -167,10 +195,6 @@
   text-align: center;
   color: $white;
 
-  @media (min-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 1.2;
-  }
 
   &--form {
     padding-top: 29px;
@@ -198,6 +222,28 @@
 
     @media (min-width: $desktop-width) {
       padding: 62px 200px 101px 200px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
+    background: $downloads-bkg  url(../img/bg-back-mobile@2x.jpg) no-repeat 50% 257px;
+    background-size: 700px 462px;
+
+    @media (min-width: $tablet-width) {
+      background: $downloads-bkg url(../img/bg-back-tablet@2x.jpg) no-repeat 50% 255px;
+      background-size: 1200px 729px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: $downloads-bkg url(../img/bg-back-desktop@2x.jpg) no-repeat 50% 0;
+      background-size: 2560px 853px;
     }
   }
 }

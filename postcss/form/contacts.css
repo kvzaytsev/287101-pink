@@ -21,9 +21,16 @@
 }
 
 .trip-form__contacts {
-  @media (max-width: $mobile-width) {
-    @mixin reset-fieldset;
-    @mixin container;
+  @mixin reset-fieldset;
+  @mixin container;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 2px;
+    width: auto;
+    padding: 4px 12px 10px;
+    box-sizing: border-box;
+
+    border: 2px solid $lightGrey;
   }
 }
 
@@ -97,17 +104,54 @@
   }
 }
 
-.trip-form__contacts-input {
-  display: block;
+.trip-form__contacts-input-wrap {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: 15px 20px 14px 20px;
+  display: flex;
 
-  font-size: 18px;
-  line-height: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    height: 60px;
+    width: 60px;
+    top: 2px;
+    right: 2px;
+    background-color: $lightGrey;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--phone {
+    &::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &--email {
+    &::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+
+.trip-form__contacts-input {
+  display: block;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 15px 20px 15px 20px;
   border: 2px solid $lightGrey;
   border-radius: 2px;
+  font-size: 18px;
+  line-height: 30px;
+  z-index: 1;
+  background: none;
 
   &:hover {
     border: 2px solid $deepBlue;
@@ -116,5 +160,9 @@
   &:focus,
   &:active {
     border: 2px solid $contacts-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 80px 15px 20px;
   }
 }
