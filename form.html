@@ -5,9 +5,14 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,  initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
+
+  <div class="symbol-library">
+    <!-- inject:svg --><!-- endinject -->
+  </div>
 
   <header class="page-header no-js">
 
@@ -18,16 +23,16 @@
 
           <a class="page-header__logo-wrap" href="index.html">
             <svg class="page-header__logo" width="75" height="22" role="img" aria-label="Пинк">
-              <use class="page-header__logo-icon page-header__logo-icon--mobile" xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
-              <use class="page-header__logo-icon page-header__logo-icon--tablet" xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
-              <use class="page-header__logo-icon page-header__logo-icon--desktop" xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--mobile" xlink:href="#logo-pink-white-mobile"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--tablet" xlink:href="#logo-pink-white-tablet"></use>
+              <use class="page-header__logo-icon page-header__logo-icon--desktop" xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
 
           <button class="page-header__toggle-wrap js-menu-toggle" type="button">
             <svg class="page-header__toggle" width="24" height="24" >
-              <use class="page-header__toggle-icon page-header__toggle-icon--cross" xlink:href="img/sprite.svg#icon-menu-cross"></use>
-              <use class="page-header__toggle-icon page-header__toggle-icon--burger" xlink:href="img/sprite.svg#icon-menu-burger"></use>
+              <use class="page-header__toggle-icon page-header__toggle-icon--cross" xlink:href="#icon-menu-cross"></use>
+              <use class="page-header__toggle-icon page-header__toggle-icon--burger" xlink:href="#icon-menu-burger"></use>
             </svg>
           </button>
         </div>
@@ -296,8 +301,8 @@
 
     <a class="page-footer__logo-wrap" href="index.html">
       <svg class="page-footer__logo" width="150" height="40" role="img" aria-label="Пинк">
-        <use class="page-footer__logo-icon page-footer__logo-icon--mobile" xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
-        <use class="page-footer__logo-icon page-footer__logo-icon--desktop" xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        <use class="page-footer__logo-icon page-footer__logo-icon--mobile" xlink:href="#logo-pink-blue-mobile"></use>
+        <use class="page-footer__logo-icon page-footer__logo-icon--desktop" xlink:href="#logo-pink-blue-desktop"></use>
       </svg>
     </a>
 
@@ -311,7 +316,7 @@
       <span class="page-footer__copyright-text">Разработано</span>
       <a class="page-footer__copyright-logo-wrap" href="https://htmlacademy.ru/">
         <svg width="27" height="34" class="page-footer__copyright-logo" role="img" aria-label="HTML Academy">
-          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>

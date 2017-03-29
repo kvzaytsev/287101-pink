@@ -22,11 +22,12 @@
 .trip-form__achievements {
   @mixin reset-fieldset;
   @mixin container;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 2px;
+    margin: 8px 2px 0;
     width: auto;
-    padding: 6px 12px 10px;
+    padding: 15px 12px 10px;
     box-sizing: border-box;
 
     border: 2px solid $lightGrey;

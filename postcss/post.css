@@ -208,14 +208,17 @@
 }
 
 .post__like-btn {
-
+  border: none;
   display: block;
-  width: 13px;
+  width: 12px;
   height: 12px;
   font-size: 0;
   fill: $contacts-red;
-  background: url(../img/icon-heart.svg);
-  border: none;
+  background: none;
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 12px;
+
   cursor: pointer;
 
   @media (min-width: $tablet-width) {

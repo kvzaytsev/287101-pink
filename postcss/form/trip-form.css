@@ -19,7 +19,6 @@
   input {
     font-family: $font;
   }
-
 }
 
 .trip-form__legend {
@@ -49,6 +48,12 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background: $white;
     padding: 0 30px;
   }
 }

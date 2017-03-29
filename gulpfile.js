@@ -13,6 +13,7 @@ var rename = require("gulp-rename");
 var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
+var inject = require("gulp-inject");
 var run = require("run-sequence");
 var del = require("del");
 
@@ -51,13 +52,20 @@ gulp.task("style", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("build/img/icons/*.svg")
+  var svgs = gulp.src("build/img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    }));
+
+  function fileContents (filePath, file) {
+    return file.contents.toString();
+  }
+
+  return gulp
+    .src("build/*.html")
+    .pipe(inject(svgs, { transform: fileContents }))
+    .pipe(gulp.dest('build/'));
 });
 
 gulp.task("images", function () {
@@ -75,7 +83,7 @@ gulp.task("html:copy", function () {
     .pipe(gulp.dest("build"))
 });
 
-gulp.task("html:update", ["html:copy"], function (done) {
+gulp.task("html:update", ["sprite", "html:copy"], function (done) {
   server.reload();
   done();
 });
