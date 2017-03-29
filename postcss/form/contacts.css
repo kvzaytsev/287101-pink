@@ -23,11 +23,12 @@
 .trip-form__contacts {
   @mixin reset-fieldset;
   @mixin container;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 2px;
+    margin: 8px 2px 0;
     width: auto;
-    padding: 4px 12px 10px;
+    padding: 11px 12px 10px;
     box-sizing: border-box;
 
     border: 2px solid $lightGrey;
@@ -114,9 +115,9 @@
     content: "";
     position: absolute;
     display: none;
-    height: 60px;
+    height: 100%;
+    box-sizing: border-box;
     width: 60px;
-    top: 2px;
     right: 2px;
     background-color: $lightGrey;
     background-size: 20px 20px;
