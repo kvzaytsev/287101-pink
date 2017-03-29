@@ -2,7 +2,16 @@ body {
   padding: 0;
   margin: 0;
   font-family: $font;
+
   min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 960px;
+  }
 }
 
 .visually-hidden {

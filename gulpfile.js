@@ -32,16 +32,15 @@ gulp.task("assets", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp.src("postcss/style.css")
     .pipe(plumber())
     .pipe(postcss([
       precss(),
-      autoprefixer({browsers: [
-        "last 2 versions"
-      ]}),
-      mqpacker({
-        sort: true
+      autoprefixer({
+        browsers: [
+          "last 2 versions"
+        ]
       })
     ]))
     .pipe(gulp.dest("build/css"))
@@ -71,6 +70,16 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("html:copy", function () {
+  return gulp.src("*.html")
+    .pipe(gulp.dest("build"))
+});
+
+gulp.task("html:update", ["html:copy"], function (done) {
+  server.reload();
+  done();
+});
+
 gulp.task("build", function (fn) {
   run(
     "clean",
@@ -82,7 +91,7 @@ gulp.task("build", function (fn) {
   );
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
   server.init({
     server: "build",
     notify: false,
@@ -92,5 +101,5 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("postcss/**/*.css", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html:update"]);
 });

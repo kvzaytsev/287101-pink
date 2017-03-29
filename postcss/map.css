@@ -70,6 +70,19 @@
   width: 100%;
 
   &::before {
-    height: 11vw;
+    height: 10vw;
+
+    @media (min-width: $tablet-width) {
+      height: 11vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 10vw;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    width: 100%;
   }
 }
