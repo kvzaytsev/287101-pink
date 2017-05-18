@@ -24,6 +24,7 @@ gulp.task("clean", function () {
 gulp.task("assets", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
+    "img/**",
     "js/**"
   ], {
     base: "."
@@ -50,7 +51,7 @@ gulp.task("style", function () {
 });
 
 gulp.task("sprite", function () {
-  var svgs = gulp.src("img/icons/*.svg")
+  var svgs = gulp.src("build/img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
@@ -67,7 +68,7 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("img/**/*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
