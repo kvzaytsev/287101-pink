@@ -25,8 +25,7 @@ gulp.task("assets", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/**",
-    "js/**",
-    "*.html"
+    "js/**"
   ], {
     base: "."
   })
@@ -63,9 +62,9 @@ gulp.task("sprite", function () {
   }
 
   return gulp
-    .src("build/*.html")
+    .src("templates/*.html")
     .pipe(inject(svgs, { transform: fileContents }))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task("images", function () {
